@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:loan_guru/splesh_scrren/view/splesh_scrren_page.dart';
 
@@ -37,14 +38,18 @@ class _MyAppState extends State<MyApp> {
       statusBarIconBrightness: Brightness.dark,
 
     ));
-    return GetMaterialApp(
-      title: appName,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: false,
-        primarySwatch: Colors.blue,
+    return ScreenUtilInit(
+      designSize: Size(360, 690), // Set the design size of your app
+      minTextAdapt: true,
+      child: GetMaterialApp(
+        title: appName,
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          useMaterial3: false,
+          primarySwatch: Colors.blue,
+        ),
+        home: const SpleshScrrenPage(),
       ),
-      home: const SpleshScrrenPage(),
     );
   }
   @override

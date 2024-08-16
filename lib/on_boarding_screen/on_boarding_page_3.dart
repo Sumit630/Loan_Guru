@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loan_guru/global_var.dart';
 
+import '../home_scrren/home_page.dart';
 import 'on_borading_page_2.dart';
 
 class OnBoardingPage3 extends StatefulWidget {
@@ -25,10 +26,10 @@ class _OnBoardingPage3State extends State<OnBoardingPage3> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: SizedBox(height: 80,width:130,child: InkWell(onTap: () {
-
-              },child: Image(image: AssetImage("assets/images/btn_next.webp")))),
+                nextPageFade(const HomePage());
+              },child: const Image(image: AssetImage("assets/images/btn_next.webp")))),
             ),
           ),
 
