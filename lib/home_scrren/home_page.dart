@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:loan_guru/utils/cons.dart';
 
+import '../global_var.dart';
+import '../select_credit_list_scrren/view/credit_card_type_home_page.dart';
 import '../utils/color.dart';
 
 class HomePage extends StatefulWidget {
@@ -266,7 +268,7 @@ class _HomePageState extends State<HomePage> {
                       width: 130,
                       child: InkWell(
                           onTap: () {
-                            //    nextPageFade(const OnBoradingPage2());
+                                nextPageFade(const CreditCardTypeHomePage());
                           },
                           child: const Image(
                               image:
