@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
+import 'package:loan_guru/select_credit_list_scrren/view/credit_card_type_list_data_select_page.dart';
 import 'package:loan_guru/utils/cons.dart';
 
 import '../../global_var.dart';
@@ -231,6 +232,11 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                       width: 130,
                       child: InkWell(
                           onTap: () {
+                            if(_selectedCreditCardType==""&&_selectedCreditCardTypeSalery==""&&_selectedCreditCardTypeLoanPayment==""&&_selectedCreditCardTypeLoanMoth==""&&_selectedCreditCardTypeProfession==""){
+                            }
+                            else{
+                              nextPageFade(CreditCardTypeListDataSelectPage());
+                            }
                            /// nextPageFade(const CreditCardTypeHomePage());
                           },
                           child: const Image(

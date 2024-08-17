@@ -46,4 +46,20 @@ class CreditCardTypeController {
     'Lawyer',
     'Other',
   ];
+  static List<String> nameOfCreditCardSelectLoanList = [
+    'Installment',
+    'At Once',
+    'Flexible',
+    'In 1 Months',
+    'In 2 Months',
+    'In 3 Months',
+  ];
+  static List<String> nameOfCreditCardChooseLoanMonthList = [
+    '3 Months +',
+    '6 Months +',
+    '9 Months +',
+    '12 Months +',
+    '18 Months +',
+    '24 Months +',
+  ];
 }
