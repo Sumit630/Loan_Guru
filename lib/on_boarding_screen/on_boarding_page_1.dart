@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:loan_guru/global_var.dart';
-import 'package:loan_guru/utils/cons.dart';
 
 import 'on_borading_page_2.dart';
 

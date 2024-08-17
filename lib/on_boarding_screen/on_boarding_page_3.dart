@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:loan_guru/global_var.dart';
 
 import '../home_scrren/home_page.dart';
-import 'on_borading_page_2.dart';
 
 class OnBoardingPage3 extends StatefulWidget {
   const OnBoardingPage3({super.key});
