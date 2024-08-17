@@ -79,7 +79,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                     String creditCardLoanMonth = CreditCardTypeController
                         .nameOfCreditCardLoanMonthList[index];
                     String creditCardLoanProfession = CreditCardTypeController
-                        .nameOfCreditCardLoanMonthList[index];
+                        .nameOfCreditCardProfessionList[index];
                     return InkWell(
                       onTap: () {
                         setState(() {
@@ -101,7 +101,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                             _selectedCreditCardTypeLoanMoth = creditCardLoanMonth;
                           }
                           else{
-                            _selectedCreditCardTypeLoanMoth = creditCardLoanProfession;
+                            _selectedCreditCardTypeProfession = creditCardLoanProfession;
                           }
                         });
                       },
@@ -144,7 +144,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                                   "Loan Payment")?
                                   _selectedCreditCardTypeLoanPayment:
                               (GlobalVarr.creditCardSeletType.value ==
-                                  "Loan Payment")?
+                                  "Loan Month")?
                               _selectedCreditCardTypeLoanMoth:
                               _selectedCreditCardTypeProfession,
                               activeColor: Colors.green,
