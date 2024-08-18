@@ -223,7 +223,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                 ),
               ),
               Spacer(),
-              Align(
+              (_selectedCreditCardType != null||_selectedCreditCardTypeSalery!=null||_selectedCreditCardTypeLoanPayment!=null||_selectedCreditCardTypeLoanMoth!=null||_selectedCreditCardTypeProfession!=null)?Align(
                 alignment: Alignment.bottomCenter,
                 child: Padding(
                   padding: const EdgeInsets.all(20),
@@ -243,7 +243,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                               image:
                               AssetImage("assets/images/btn_next.webp")))),
                 ),
-              ),
+              ):SizedBox(),
             ],
           );
         }),

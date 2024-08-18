@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../country_scrren/view/country_home_page.dart';
+import '../../global_var.dart';
 import '../../utils/color.dart';
 import '../controller/credit_card_list_controller.dart';
 
@@ -58,7 +60,7 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
               child: ListView.builder(shrinkWrap: true,itemCount:CreditCardTypeController.nameOfCreditCardChooseLoanMonthList.length,itemBuilder: (context, index) {
                 return  InkWell(
                   onTap: () {
-                    // nextPageFade(const ChooseLoanMonthPage());
+                     nextPageFade(const CountryHomePage());
                   },
                   child: Container(
                     width: screenWidth,

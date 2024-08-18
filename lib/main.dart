@@ -5,6 +5,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:loan_guru/splesh_scrren/view/splesh_scrren_page.dart';
 
+import 'country_scrren/controller/country_controller.dart';
+
 
 const String appName = "Credit card guide";
 void main() async {
@@ -54,6 +56,7 @@ class _MyAppState extends State<MyApp> {
   }
   @override
   void initState() {
+    print("list Count :; ${CreditCountryController.nameOfCountryList.length}||Image ${CreditCountryController.nameOfCountryList.length}");
   //  AppOpenAdManager().appOpenAds();
     // _appLifecycleReactor =
     //     AppLifecycleReactor(appOpenAdManager: appOpenAdManager);
