@@ -503,4 +503,16 @@ class CreditCountryController {
     "flag_zm.png",
     "flag_zw.png",
   ];
+  static List<String> emiLoanGuideList=[
+    "home_types_loan.webp",
+    "home_interest_rate.webp",
+    "home_tips_of_loan.webp",
+    "home_loan_guide.webp",
+    "home_multi_tool.webp",
+    "home_repayment.webp",
+    "home_cureency_converter.webp",
+    "home_mutual_funds.webp",
+    "home_insurance_policy.webp",
+    "home_finance_tips.webp",
+  ];
 }

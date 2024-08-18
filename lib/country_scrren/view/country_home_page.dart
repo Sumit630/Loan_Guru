@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:loan_guru/country_scrren/view/emi_loan_guide_page.dart';
+import 'package:loan_guru/global_var.dart';
 import 'package:loan_guru/utils/cons.dart';
 
 import '../../select_credit_list_scrren/controller/credit_card_list_controller.dart';
@@ -48,7 +50,8 @@ class _CountryHomePageState extends State<CountryHomePage> {
     return SafeArea(
       child: Scaffold(
         floatingActionButton: (_selectedCreditCardType != null)?FloatingActionButton(onPressed: () {
-        },backgroundColor: Colors.white,child: Icon(Icons.keyboard_arrow_right_outlined,color: Colors.black,),):null,
+      nextPageFade(const EmiLoanGuidePage());
+        },backgroundColor: Colors.white,child: const Icon(Icons.keyboard_arrow_right_outlined,color: Colors.black,),):null,
         body: Obx(() {
             return Column(
               children: [
@@ -92,15 +95,15 @@ class _CountryHomePageState extends State<CountryHomePage> {
                           _filterCountries(value);
                         },
                         decoration: InputDecoration(
-                          icon: Padding(
-                            padding: const EdgeInsets.all(10.0),
+                          icon: const Padding(
+                            padding: EdgeInsets.all(10.0),
                             child: Icon(Icons.search,color:Colors.white,),
                           ),
                           suffixIcon: InkWell(onTap: () {
                             filteredCountries = allCountries;
                             searchOFCountryConttroler.text="";
                             selectSharsh(false);
-                          },child: Icon(Icons.close,color: Colors.white,)),
+                          },child: const Icon(Icons.close,color: Colors.white,)),
                           border: InputBorder.none
                         ),
                       ),
@@ -141,7 +144,7 @@ class _CountryHomePageState extends State<CountryHomePage> {
                                       width: 5,
                                     ),
                                     boxShadow: [
-                                      BoxShadow(
+                                      const BoxShadow(
                                         color: Colors.black26,
                                         blurRadius: 10,
                                         spreadRadius: 2,
@@ -150,7 +153,7 @@ class _CountryHomePageState extends State<CountryHomePage> {
                                     ],
                                     shape:BoxShape.circle,
                                     gradient:
-                                    LinearGradient(colors: [colorPink, colorRed]),
+                                    const LinearGradient(colors: [colorPink, colorRed]),
                             //        image:DecorationImage(fit: BoxFit.cover,image: AssetImage("assets/images/${CreditCountryController.imageOfCountry[CreditCountryController.nameOfCountryList.indexOf(filteredCountries[index])]}"))
                                   ),
                                   child: ClipPath(
