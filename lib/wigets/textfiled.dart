@@ -14,7 +14,7 @@ class MyCustomTextField extends StatefulWidget {
   final InputDecoration? decoration;
   final Widget? suffixIcon;
   final Widget? prefixIcon;
-
+  final void Function(String)? onChanged;
   MyCustomTextField({
     required this.controller,
     this.hintText = '',
@@ -27,6 +27,7 @@ class MyCustomTextField extends StatefulWidget {
     this.decoration,
     this.suffixIcon,
     this.prefixIcon,
+    this.onChanged,
   });
 
   @override
@@ -43,6 +44,7 @@ class _MyCustomTextFieldState extends State<MyCustomTextField> {
       ),
 
       child: TextFormField(
+        onChanged:widget.onChanged,
         controller: widget.controller,
         keyboardType: TextInputType.number,
         obscureText: widget.obscureText,
