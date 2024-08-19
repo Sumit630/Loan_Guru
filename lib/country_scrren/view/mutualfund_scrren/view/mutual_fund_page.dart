@@ -3,9 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:loan_guru/utils/cons.dart';
 import 'package:scroll_loop_auto_scroll/scroll_loop_auto_scroll.dart';
 
-import '../../../utils/color.dart';
-import '../interest_rates_loans_scrren/controller/interest_controller.dart';
-import '../loan_guide_scrren/controller/loan_controller.dart';
+import '../../../../utils/color.dart';
+import '../../interest_rates_loans_scrren/controller/interest_controller.dart';
+import '../../loan_guide_scrren/controller/loan_controller.dart';
+import '../contrlloer/mutualfund_controller.dart';
 
 class MutualFundPage extends StatefulWidget {
   const MutualFundPage({super.key});
@@ -95,7 +96,7 @@ class _MutualFundPageState extends State<MutualFundPage> {
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${LoanController.loanIntrodutinList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20,fontFamily: "Regular"),),
+                                child: Text("${MutualfundController.mutaulfundIntrodution}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20,fontFamily: "Regular"),),
                               ),
                             ],
                           ),

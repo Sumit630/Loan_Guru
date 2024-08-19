@@ -10,6 +10,9 @@ import '../controller/country_controller.dart';
 import 'Repayment_scrren/view/repayment_page.dart';
 import 'all_types_of_loan_scrren/view/all_types_of_loan_page.dart';
 import 'currency_converter_screen/view/currency_converter_page.dart';
+import 'finance_tips_scrren/view/finance_page.dart';
+import 'insurance_policy_scrren/view/insurance_policy_page.dart';
+import 'mutualfund_scrren/view/mutual_fund_page.dart';
 
 class EmiLoanGuidePage extends StatefulWidget {
   const EmiLoanGuidePage({super.key});
@@ -66,11 +69,17 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                         nextPageFade(const CurrencyConverterPage());
                       },child: const Image(image: AssetImage("assets/images/home_cureency_converter.webp"))),
                       2.ph,
-                      const Image(image: AssetImage("assets/images/home_mutual_funds.webp")),
+                      InkWell(onTap: () {
+                        nextPageFade(MutualFundPage());
+                      },child: const Image(image: AssetImage("assets/images/home_mutual_funds.webp"))),
                       2.ph,
-                      const Image(image: AssetImage("assets/images/home_insurance_policy.webp")),
+                      InkWell(onTap: () {
+                        nextPageFade(InsurancePolicyPage());
+                      },child: const Image(image: AssetImage("assets/images/home_insurance_policy.webp"))),
                       2.ph,
-                      const Image(image: AssetImage("assets/images/home_finance_tips.webp")),
+                      InkWell(onTap: () {
+                        nextPageFade(FinancePage());
+                      },child: const Image(image: AssetImage("assets/images/home_finance_tips.webp"))),
                       2.ph,
                       Text("Other Credit Card Tools",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 24.sp,fontFamily: "Regular"),),
                       2.ph,
