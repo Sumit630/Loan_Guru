@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:loan_guru/global_var.dart';
 import 'package:loan_guru/utils/cons.dart';
 
 import '../controller/country_controller.dart';
+import 'all_types_of_loan_scrren/view/all_types_of_loan_page.dart';
 
 class EmiLoanGuidePage extends StatefulWidget {
   const EmiLoanGuidePage({super.key});
@@ -29,7 +31,9 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                     children: [
                       Text("All Financial Tools",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 24.sp,fontFamily: "Regular"),),
                       2.ph,
-                      const Image(image: AssetImage("assets/images/home_types_loan.webp")),
+                      InkWell(onTap: () {
+                        nextPageFade(const AllTypesOfLoanPage());
+                      },child: const Image(image: AssetImage("assets/images/home_types_loan.webp"))),
                       2.ph,
                       const Image(image: AssetImage("assets/images/home_interest_rate.webp")),
                       2.ph,

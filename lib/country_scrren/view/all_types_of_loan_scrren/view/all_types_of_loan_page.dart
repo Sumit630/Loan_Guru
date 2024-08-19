@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:loan_guru/country_scrren/view/all_types_of_loan_scrren/view/all_types_of_loan_list_page.dart';
+import 'package:loan_guru/global_var.dart';
+import 'package:loan_guru/utils/cons.dart';
 
-import '../../../utils/color.dart';
+import '../../../../utils/color.dart';
+import '../controller/all_type_of_loan_controller.dart';
 
 class AllTypesOfLoanPage extends StatefulWidget {
   const AllTypesOfLoanPage({super.key});
@@ -39,7 +43,7 @@ class _AllTypesOfLoanPageState extends State<AllTypesOfLoanPage> {
                           Navigator.pop(context);
                         },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Text(
                         "Types  Of Loan",
                         textAlign: TextAlign.center,
@@ -48,15 +52,30 @@ class _AllTypesOfLoanPageState extends State<AllTypesOfLoanPage> {
                             color: Colors.white,
                             fontSize: 24.sp),
                       ),
-                      Spacer(),
+                      const Spacer(),
                     ],
                   ),
                 ],
               ),
             ),
-            ListView.builder(shrinkWrap: true,itemCount: 10,itemBuilder: (context, index) {
-              return SizedBox();
-            },),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 40,vertical:20),
+                child: ListView.builder(shrinkWrap: true,itemCount: AllTypeOfLoanController.nameOfAllTypeOfLoanList.length,itemBuilder: (context, index) {
+                  return  Column(
+                    children: [
+                      InkWell(onTap: () {
+                        //print("Var :: ${GlobalVarr.creditCardSeletType}");
+                        GlobalVarr.creditCardTypesOfLoan(index);
+                        nextPageFade(const AllTypesOfLoanListPage());
+                        print("index:;${index}");
+                      },child: Image(image: AssetImage("assets/images/${AllTypeOfLoanController.nameOfAllTypeOfLoanList[index]}"))),
+                      2.ph,
+                    ],
+                  );
+                },),
+              ),
+            ),
           ],
         ),
       ),
