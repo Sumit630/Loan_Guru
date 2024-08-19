@@ -7,6 +7,7 @@ import 'package:loan_guru/global_var.dart';
 import 'package:loan_guru/utils/cons.dart';
 
 import '../controller/country_controller.dart';
+import 'Repayment_scrren/view/repayment_page.dart';
 import 'all_types_of_loan_scrren/view/all_types_of_loan_page.dart';
 
 class EmiLoanGuidePage extends StatefulWidget {
@@ -53,10 +54,12 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                       InkWell(onTap: () {
                         nextPageFade(const LoanGuidePage());
                       },child: const Image(image: AssetImage("assets/images/home_loan_guide.webp"))),
+                      // 2.ph,
+                      // const Image(image: AssetImage("assets/images/home_multi_tool.webp")),
                       2.ph,
-                      const Image(image: AssetImage("assets/images/home_multi_tool.webp")),
-                      2.ph,
-                      const Image(image: AssetImage("assets/images/home_repayment.webp")),
+                      InkWell(onTap: () {
+                        nextPageFade(const RepaymentPage());
+                      },child: const Image(image: AssetImage("assets/images/home_repayment.webp"))),
                       2.ph,
                       const Image(image: AssetImage("assets/images/home_cureency_converter.webp")),
                       2.ph,
