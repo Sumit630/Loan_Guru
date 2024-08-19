@@ -5,6 +5,7 @@ import 'package:loan_guru/utils/cons.dart';
 
 import '../../../../global_var.dart';
 import '../controller/all_type_of_loan_controller.dart';
+import 'all_type_of_loan_introdution_page.dart';
 
 class AllTypesOfLoanListPage extends StatefulWidget {
   const AllTypesOfLoanListPage({super.key});
@@ -83,7 +84,57 @@ class _AllTypesOfLoanListPageState extends State<AllTypesOfLoanListPage> {
               shrinkWrap: true,itemBuilder: (context, index) {
               return InkWell(
                 onTap: () {
-
+                  GlobalVarr.creditCardSeletType("");
+                  if(GlobalVarr.creditCardTypesOfLoan.value==0){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfMortgageOfLoansList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else if(GlobalVarr.creditCardTypesOfLoan.value==1){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfAutoLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else if(GlobalVarr.creditCardTypesOfLoan.value==2){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfPersonalLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else if(GlobalVarr.creditCardTypesOfLoan.value==3){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfStudentLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else if(GlobalVarr.creditCardTypesOfLoan.value==4){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfCreditCardLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else if(GlobalVarr.creditCardTypesOfLoan.value==5){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfBusinessLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else if(GlobalVarr.creditCardTypesOfLoan.value==6){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfPersonalLinesOfCreditLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else if(GlobalVarr.creditCardTypesOfLoan.value==7){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfPaydayLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else if(GlobalVarr.creditCardTypesOfLoan.value==8){
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfAutoTitleLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
+                  else{
+                    GlobalVarr.creditCardSeletType(AllTypeOfLoanController.nameOfHomeEquityLoanList[index]);
+                    print(GlobalVarr.creditCardSeletType.value);
+                    nextPageFade(const AllTypeOfLoanIntrodutionPage());
+                  }
                 },
                 child: Container(
                   width: screenWidth,
