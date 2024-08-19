@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:loan_guru/country_scrren/view/interest_rates_loans_scrren/view/interest_rates_loans_introdution_page.dart';
 import 'package:loan_guru/global_var.dart';
 import 'package:loan_guru/utils/cons.dart';
 
@@ -35,7 +36,11 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                         nextPageFade(const AllTypesOfLoanPage());
                       },child: const Image(image: AssetImage("assets/images/home_types_loan.webp"))),
                       2.ph,
-                      const Image(image: AssetImage("assets/images/home_interest_rate.webp")),
+                      InkWell(
+                          onTap: () {
+                            nextPageFade(InterestRatesLoansIntrodutionPage());
+                          },
+                          child: const Image(image: AssetImage("assets/images/home_interest_rate.webp"))),
                       2.ph,
                       const Image(image: AssetImage("assets/images/home_tips_of_loan.webp")),
                       2.ph,

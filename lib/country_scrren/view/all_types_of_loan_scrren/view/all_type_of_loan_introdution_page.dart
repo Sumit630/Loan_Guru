@@ -75,7 +75,8 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                 ],
               ),
             ),
-            (GlobalVarr.creditCardSeletType.value=="What is Mortgage Loans?")?Expanded(
+            (GlobalVarr.creditCardSeletType.value=="What is Mortgage Loans?")?
+            Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(12),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.end,
