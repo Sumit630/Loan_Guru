@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:loan_guru/country_scrren/view/chack_credit_online_scrren/view/chack_credit_online_home_page.dart';
 import 'package:loan_guru/country_scrren/view/crriticism_and_cons_scrren/view/criticism_and_cons_page.dart';
 import 'package:loan_guru/country_scrren/view/interest_rates_loans_scrren/view/interest_rates_loans_introdution_page.dart';
 import 'package:loan_guru/country_scrren/view/loan_guide_scrren/view/loan_guide_page.dart';
@@ -91,7 +92,9 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                       2.ph,
                       Text("Other Credit Card Tools",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 24.sp,fontFamily: "Regular"),),
                       2.ph,
-                      const Image(image: AssetImage("assets/images/home_check_credit_online.webp")),
+                      InkWell(onTap: () {
+                        nextPageFade(const ChackCreditOnlineHomePage());
+                      },child: const Image(image: AssetImage("assets/images/home_check_credit_online.webp"))),
                       2.ph,
                       const Image(image: AssetImage("assets/images/home_check_credit_offline.webp")),
                       2.ph,
