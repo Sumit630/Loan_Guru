@@ -17,6 +17,7 @@ import 'package:loan_guru/utils/cons.dart';
 import '../controller/country_controller.dart';
 import 'Repayment_scrren/view/repayment_page.dart';
 import 'all_types_of_loan_scrren/view/all_types_of_loan_page.dart';
+import 'check_credit_offline_scrren/view/check_credit_offline_page.dart';
 import 'comparisons_lenders_scrren/view/comparisons_page.dart';
 import 'currency_converter_screen/view/currency_converter_page.dart';
 import 'finance_tips_scrren/view/finance_page.dart';
@@ -96,7 +97,9 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                         nextPageFade(const ChackCreditOnlineHomePage());
                       },child: const Image(image: AssetImage("assets/images/home_check_credit_online.webp"))),
                       2.ph,
-                      const Image(image: AssetImage("assets/images/home_check_credit_offline.webp")),
+                      InkWell(onTap: () {
+                        nextPageFade(CheckCreditOfflinePage());
+                      },child: const Image(image: AssetImage("assets/images/home_check_credit_offline.webp"))),
                       2.ph,
                       Text("Payment LoanTools",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 24.sp,fontFamily: "Regular"),),
                       2.ph,
