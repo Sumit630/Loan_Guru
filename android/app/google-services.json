@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218758514469",
+    "project_id": "loan-guru-6a6e1",
+    "storage_bucket": "loan-guru-6a6e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218758514469:android:74d17cdb46d041ad3b3ccc",
+        "android_client_info": {
+          "package_name": "com.example.loan_guru"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWXWBaUFJhlLy4jIAxR9S_mI5y_QbmY4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
