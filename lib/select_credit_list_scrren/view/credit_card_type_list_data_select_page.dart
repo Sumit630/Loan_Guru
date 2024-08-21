@@ -66,7 +66,7 @@ class _CreditCardTypeListDataSelectPageState extends State<CreditCardTypeListDat
                     width: screenWidth,
                     height: 55,
                     margin: const EdgeInsets.symmetric(vertical: 8),
-                    decoration: const BoxDecoration(
+                    decoration:  BoxDecoration(
                       gradient:
                       LinearGradient(colors: [colorPink, colorRed]),
                       borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -76,11 +76,11 @@ class _CreditCardTypeListDataSelectPageState extends State<CreditCardTypeListDat
                         Text(
                           CreditCardTypeController.nameOfCreditCardSelectLoanList[index],
                           textAlign: TextAlign.start,
-                          style: const TextStyle(
+                          style:  TextStyle(
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
                               fontFamily: "Regular",
-                              fontSize: 20),
+                              fontSize: 20.sp),
                         ),
                       ],
                     ),

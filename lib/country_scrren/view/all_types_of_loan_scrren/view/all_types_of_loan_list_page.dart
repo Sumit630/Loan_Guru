@@ -148,10 +148,10 @@ class _AllTypesOfLoanListPageState extends State<AllTypesOfLoanListPage> {
                   child: Row(mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       2.pw,
-                      Text("${index+1}.",style: const TextStyle(  fontWeight: FontWeight.w900,
+                      Text("${index+1}.",style:  TextStyle(  fontWeight: FontWeight.w900,
                           color: Colors.white,
                           fontFamily: "Regular",
-                          fontSize: 20),),
+                          fontSize: 20.sp),),
                       2.pw,
                       Text(
                         (GlobalVarr.creditCardTypesOfLoan.value==0)?AllTypeOfLoanController.nameOfMortgageOfLoansList[index]:
@@ -165,11 +165,11 @@ class _AllTypesOfLoanListPageState extends State<AllTypesOfLoanListPage> {
                         (GlobalVarr.creditCardTypesOfLoan.value==8)?AllTypeOfLoanController.nameOfAutoTitleLoanList[index]:
                         AllTypeOfLoanController.nameOfHomeEquityLoanList[index],
                         textAlign: TextAlign.start,
-                        style: const TextStyle(
+                        style:  TextStyle(
                             fontWeight: FontWeight.w900,
                             color: Colors.white,
                             fontFamily: "Regular",
-                            fontSize: 20),
+                            fontSize: 20.sp),
                       ),
                     ],
                   ),

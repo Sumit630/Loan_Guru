@@ -48,21 +48,24 @@ class _MyAppState extends State<MyApp> {
     return ScreenUtilInit(
       designSize: Size(360, 690), // Set the design size of your app
       minTextAdapt: true,
-      child: GetMaterialApp(
-        title: appName,
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          useMaterial3: false,
-          primarySwatch: Colors.blue,
-        ),
-        home: const SpleshScrrenPage(),
-      ),
+      splitScreenMode: true,
+      builder: (context, child) {
+        return  GetMaterialApp(
+          title: appName,
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            useMaterial3: false,
+            primarySwatch: Colors.blue,
+          ),
+          home: const SpleshScrrenPage(),
+        );
+      },
     );
   }
   @override
   void initState() {
     print("list Count :; ${CreditCountryController.nameOfCountryList.length}||Image ${CreditCountryController.nameOfCountryList.length}");
-    AppOpenAdManager().appOpenAds();
+    //AppOpenAdManager().appOpenAds();
     // _appLifecycleReactor =
     //     AppLifecycleReactor(appOpenAdManager: appOpenAdManager);
     // _appLifecycleReactor.listenToAppStateChanges();

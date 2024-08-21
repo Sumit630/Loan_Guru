@@ -36,7 +36,9 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
               Container(
                 height: screenHeight / 7.8,
                 width: screenWidth,
-                color: Red,
+                decoration: BoxDecoration(
+                  gradient:  LinearGradient(colors: [colorPink, colorRed]),
+                ),
                 alignment: Alignment.center,
                 child: Text(
                   "Your Trusted Loan Advisor Calculate, Compare,\nand Manger  Loans  Hassle-free.",
@@ -203,11 +205,11 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                               CreditCardTypeController
                                   .nameOfCreditCardProfessionList[index],
                               textAlign: TextAlign.start,
-                              style: const TextStyle(
+                              style:  TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                   fontFamily: "Regular",
-                                  fontSize: 20),
+                                  fontSize: 20.sp),
                             ),
                             const Spacer(),
                             const Icon(

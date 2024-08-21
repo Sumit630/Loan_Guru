@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../utils/color.dart';
 
@@ -52,11 +53,11 @@ class _MyCustomTextFieldState extends State<MyCustomTextField> {
         //maxLength: widget.maxLength,
         enabled: widget.enabled,
         validator: widget.validator,
-        style: TextStyle(color:textBleckColor,fontFamily: "Regular",fontSize:20,fontWeight: FontWeight.w400),
+        style: TextStyle(color:textBleckColor,fontFamily: "Regular",fontSize:20.sp,fontWeight: FontWeight.w400),
         decoration: widget.decoration ??
             InputDecoration(
               hintText: widget.hintText,
-              hintStyle: TextStyle(color:textBleckColor,fontFamily: "Regular",fontSize:22,fontWeight: FontWeight.w400),
+              hintStyle: TextStyle(color:textBleckColor,fontFamily: "Regular",fontSize:22.sp,fontWeight: FontWeight.w400),
               suffixIcon: widget.suffixIcon,
               prefixIcon: widget.prefixIcon,
               border: OutlineInputBorder(

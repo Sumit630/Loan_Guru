@@ -44,23 +44,30 @@ class InterstitialAds {
         }
       } else {
         String? getClick = PreferencesManager.get_Click as String?;
-
         if (Constant.Front_Counter % int.parse(getClick!) == 0) {
-          if (PreferencesManager.get_Adstyle == "Normal") {
-            if (PreferencesManager.get_Ad_Flag == "admob") {
-              admobInterstitialAdsCreate(callBack);
+          if (PreferencesManager.get_Adstyle == "normal") {
+            //  if (PreferencesManager.get_Ad_Flag == "admob") {
+            //admobInterstitialAdsCreate(callBack);
+            if (Constant.Alt_Cnt_Inter == 2) {
+              Constant.Alt_Cnt_Inter = 1;
+              loadRewardedAd(callBack);
+              //admobInterstitialAdsCreate(callBack);
             } else {
-              callBack();
+              Constant.Alt_Cnt_Inter++;
+              admobInterstitialAdsCreate(callBack);
             }
+            // } else {
+            //   callBack();
+            // }
           } else if (PreferencesManager.get_Adstyle == "ALT") {
             if (Constant.Alt_Cnt_Inter == 2) {
               Constant.Alt_Cnt_Inter = 1;
-
-              admobInterstitialAdsCreate(callBack);
+              loadRewardedAd(callBack);
+              // admobInterstitialAdsCreate(callBack);
             } else {
               Constant.Alt_Cnt_Inter++;
-
-              loadFaceBookInterstitialAd(callBack);
+              loadRewardedAd(callBack);
+              // loadFaceBookInterstitialAd(callBack);
             }
           } else if (PreferencesManager.get_Adstyle == "fb") {
             loadFaceBookInterstitialAd(callBack);

@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../utils/color.dart';
 
@@ -89,7 +90,7 @@ class _CustomButtonState extends State<CustomButton> {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: widget.textSize,
+                        fontSize: widget.textSize.sp,
                         fontFamily: "Montserrat",
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.18,

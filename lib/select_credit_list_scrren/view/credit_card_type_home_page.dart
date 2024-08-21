@@ -28,7 +28,9 @@ class _CreditCardTypeHomePageState extends State<CreditCardTypeHomePage> {
             Container(
               height: screenHeight/6.8,
               width: screenWidth,
-              color: Red,
+              decoration: BoxDecoration(
+                gradient:  LinearGradient(colors: [colorPink, colorRed]),
+              ),
               alignment: Alignment.center,
               child: Text("Please   Select   your   Credit   Score,\nSalary,   Loan Payment,  Loan  Month &\nProfession",textAlign: TextAlign.center,style: TextStyle(fontFamily: "Regular",color: Colors.white,fontSize: 22.sp),),
             ),
@@ -48,7 +50,7 @@ class _CreditCardTypeHomePageState extends State<CreditCardTypeHomePage> {
                   },
                   child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(CreditCardTypeController.nameOfCreditCardTypeHomeList[index],textAlign: TextAlign.start,style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontFamily: "Regular",fontSize: 20),),
+                      Text(CreditCardTypeController.nameOfCreditCardTypeHomeList[index],textAlign: TextAlign.start,style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontFamily: "Regular",fontSize: 20.sp),),
                       Radio<String>(
                         value: CreditCardTypeController.nameOfCreditCardTypeHomeList[index],
                         groupValue: _selectedCreditCardType,

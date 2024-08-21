@@ -111,12 +111,12 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: [
                     2.ph,
-                    const Text(
+                     Text(
                       "Please select your age",
                       style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Regular",
-                          fontSize: 24),
+                          fontSize: 24.sp),
                     ),
                     2.ph,
                     Stack(
@@ -154,8 +154,8 @@ class _HomePageState extends State<HomePage> {
                                     '$age',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 24,
-                                      fontWeight: selectedAge == age
+                                      fontSize: 24.sp,
+                                      fontWeight: selectedAge.value == age
                                           ? FontWeight.bold
                                           : FontWeight.normal,
                                     ),

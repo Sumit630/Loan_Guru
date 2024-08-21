@@ -90,7 +90,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       alignment: Alignment.center,
                       child:  Padding(
                         padding: EdgeInsets.all(10),
-                        child: Text("${AllTypeOfLoanController.nameOfFollowStepsLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        child: Text("${AllTypeOfLoanController.nameOfFollowStepsLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                     2.ph,
@@ -107,7 +107,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${AllTypeOfLoanController.nameOfApplyFollowStepsLoanIntrodutionString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20,fontFamily: "Regular"),),
+                                child: Text("${AllTypeOfLoanController.nameOfApplyFollowStepsLoanIntrodutionString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),
@@ -132,7 +132,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       alignment: Alignment.center,
                       child:  Padding(
                         padding: EdgeInsets.all(10),
-                        child: Text("${AllTypeOfLoanController.nameOfApplyMortgageString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        child: Text("${AllTypeOfLoanController.nameOfApplyMortgageString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
@@ -151,7 +151,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${AllTypeOfLoanController.nameOfApplyFMortgageIntrodutionString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                                child: Text("${AllTypeOfLoanController.nameOfApplyFMortgageIntrodutionString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),
@@ -178,7 +178,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                     SizedBox(height: 20),
                     Text(
                       'Monthly Payment: \$${_monthlyPayment.toStringAsFixed(2)}',
-                      style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,fontFamily: "Regular",color: Colors.black),
+                      style: TextStyle(fontSize: 20.sp,fontWeight: FontWeight.w500,fontFamily: "Regular",color: Colors.black),
                     ),
                   ],
                 ),
@@ -198,7 +198,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       alignment: Alignment.center,
                       child: Padding(
                         padding: EdgeInsets.all(10),
-                        child: Text("${AllTypeOfLoanController.nameOfAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        child: Text("${AllTypeOfLoanController.nameOfAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
@@ -217,7 +217,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${AllTypeOfLoanController.nameOfWhatAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                                child: Text("${AllTypeOfLoanController.nameOfWhatAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),
@@ -242,7 +242,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       alignment: Alignment.center,
                       child:  Padding(
                         padding: EdgeInsets.all(10),
-                        child: Text("${AllTypeOfLoanController.nameOfApplyAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        child: Text("${AllTypeOfLoanController.nameOfApplyAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
@@ -261,7 +261,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${AllTypeOfLoanController.nameOfApplyAutoIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                                child: Text("${AllTypeOfLoanController.nameOfApplyAutoIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),
@@ -288,7 +288,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                     SizedBox(height: 20),
                     Text(
                       'Monthly Payment: \$${_monthlyPayment.toStringAsFixed(2)}',
-                      style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,fontFamily: "Regular",color: Colors.black),
+                      style: TextStyle(fontSize: 20.sp,fontWeight: FontWeight.w500,fontFamily: "Regular",color: Colors.black),
                     ),
                   ],
                 ),
@@ -308,7 +308,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       alignment: Alignment.center,
                       child:  Padding(
                         padding: EdgeInsets.all(10),
-                        child: Text("${AllTypeOfLoanController.nameOfPersonalLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        child: Text("${AllTypeOfLoanController.nameOfPersonalLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
@@ -327,7 +327,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${AllTypeOfLoanController.nameOfPersonalIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                                child: Text("${AllTypeOfLoanController.nameOfPersonalIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),
@@ -352,7 +352,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       alignment: Alignment.center,
                       child:  Padding(
                         padding: EdgeInsets.all(10),
-                        child: Text("${AllTypeOfLoanController.nameOfApplyPersonalLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        child: Text("${AllTypeOfLoanController.nameOfApplyPersonalLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
@@ -371,7 +371,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${AllTypeOfLoanController.nameOfApplyPersonalIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                                child: Text("${AllTypeOfLoanController.nameOfApplyPersonalIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),
@@ -398,7 +398,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                     SizedBox(height: 20),
                     Text(
                       'Monthly Payment: \$${_monthlyPayment.toStringAsFixed(2)}',
-                      style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,fontFamily: "Regular",color: Colors.black),
+                      style: TextStyle(fontSize: 20.sp,fontWeight: FontWeight.w500,fontFamily: "Regular",color: Colors.black),
                     ),
                   ],
                 ),
@@ -418,7 +418,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       alignment: Alignment.center,
                       child:  Padding(
                         padding: EdgeInsets.all(10),
-                        child: Text("${AllTypeOfLoanController.nameOfStudentLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        child: Text("${AllTypeOfLoanController.nameOfStudentLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
@@ -437,7 +437,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${AllTypeOfLoanController.nameOfStudentIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                                child: Text("${AllTypeOfLoanController.nameOfStudentIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),

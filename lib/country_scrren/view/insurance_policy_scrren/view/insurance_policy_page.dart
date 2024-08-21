@@ -79,7 +79,7 @@ class _InsurancePolicyPageState extends State<InsurancePolicyPage> {
                       alignment: Alignment.center,
                       child:  Padding(
                         padding: EdgeInsets.all(10),
-                        child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                     2.ph,
@@ -96,7 +96,7 @@ class _InsurancePolicyPageState extends State<InsurancePolicyPage> {
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Text("${InsuranceController.insuranceIntrodutionList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20,fontFamily: "Regular"),),
+                                child: Text("${InsuranceController.insuranceIntrodutionList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),

@@ -165,11 +165,11 @@ class _CountryHomePageState extends State<CountryHomePage> {
                               Text(
                                 filteredCountries[index],
                                 textAlign: TextAlign.start,
-                                style: const TextStyle(
+                                style:  TextStyle(
                                     fontWeight: FontWeight.w900,
                                     color: Colors.white,
                                     fontFamily: "Regular",
-                                    fontSize: 20),
+                                    fontSize: 20.sp),
                               ),
                               Radio<String>(
                                 value: CreditCountryController.nameOfCountryList[index],

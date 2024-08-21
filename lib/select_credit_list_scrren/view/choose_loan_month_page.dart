@@ -76,11 +76,11 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
                         Text(
                           CreditCardTypeController.nameOfCreditCardChooseLoanMonthList[index],
                           textAlign: TextAlign.start,
-                          style: const TextStyle(
+                          style:  TextStyle(
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
                               fontFamily: "Regular",
-                              fontSize: 20),
+                              fontSize: 20.sp),
                         ),
                       ],
                     ),

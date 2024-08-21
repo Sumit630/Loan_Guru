@@ -149,7 +149,7 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
                     ? CircularProgressIndicator()
                     : Text(
                   'Converted Amount: ${_convertedAmount.toStringAsFixed(2)} $_toCurrency',
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 20.sp),
                 ),
               ],),
             )),
