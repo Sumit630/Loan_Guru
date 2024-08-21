@@ -205,6 +205,7 @@
 
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -256,7 +257,7 @@ class _NativeAdsState extends State<NativeAds> {
 
   _admobNative() {
     return Container(
-      padding: const EdgeInsets.all(8.0),
+      padding:EdgeInsets.all(8.0.r),
       child: SizedBox(
         height: Platform.isIOS?100:300,
         child: AdWidget(
@@ -355,7 +356,7 @@ class _NativeAdsState extends State<NativeAds> {
         highlightColor: Colors.grey.withOpacity(0.1),
         child: Container(
           height: 300,
-          padding: const EdgeInsets.all(8.0),
+          padding:  EdgeInsets.all(8.0.r),
           child: Column(
             children: [
               Row(
@@ -401,7 +402,7 @@ class _NativeAdsState extends State<NativeAds> {
               Container(
                 width: double.infinity,
                 height: 165,
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.symmetric(horizontal: 20.r),
                 color: Colors.white,
               ),
               const SizedBox(height: 10,),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../global_var.dart';
 import 'on_boarding_page_3.dart';
@@ -24,7 +25,7 @@ class _OnBoradingPage2State extends State<OnBoradingPage2> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(20.r),
               child: SizedBox(height: 80,width:130,child: InkWell(onTap: () {
                 nextPageFade(const OnBoardingPage3());
               },child: Image(image: AssetImage("assets/images/btn_next.webp")))),

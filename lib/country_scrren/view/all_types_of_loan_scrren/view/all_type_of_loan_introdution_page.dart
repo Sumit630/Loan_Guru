@@ -50,7 +50,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(15),
+                        padding:  EdgeInsets.all(15.r),
                         child: InkWell(onTap: () {
                           Navigator.pop(context);
                         },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
@@ -78,7 +78,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             (GlobalVarr.creditCardSeletType.value=="What is Mortgage Loans?")?
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(12),
+                padding:  EdgeInsets.all(12.r),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Container(
@@ -89,7 +89,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfFollowStepsLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
@@ -106,7 +106,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfApplyFollowStepsLoanIntrodutionString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20.sp,fontFamily: "Regular"),),
                               ),
                             ],
@@ -122,7 +122,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:  EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -131,14 +131,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfApplyMortgageString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:  EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -150,7 +150,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfApplyFMortgageIntrodutionString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
@@ -164,7 +164,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your Mortgage Loan!")?Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding:  EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -188,7 +188,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:  EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -197,14 +197,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child: Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:  EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -216,7 +216,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfWhatAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
@@ -232,7 +232,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -241,14 +241,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfApplyAutoLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:  EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -260,7 +260,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfApplyAutoIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
@@ -274,7 +274,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your Auto Loan!")?Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -298,7 +298,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -307,14 +307,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfPersonalLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -326,7 +326,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfPersonalIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
@@ -342,7 +342,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -351,14 +351,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfApplyPersonalLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -370,7 +370,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfApplyPersonalIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
@@ -384,7 +384,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your Personal Loan!")?Expanded(
               child:  Padding(
-                padding: const EdgeInsets.all(10),
+                padding:EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -408,7 +408,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -417,14 +417,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfStudentLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -436,7 +436,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfStudentIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                               ),
                             ],
@@ -452,7 +452,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:  EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -461,14 +461,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
-                        child: Text("${AllTypeOfLoanController.nameOfApplyStudentLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
+                        padding: EdgeInsets.all(10.r),
+                        child: Text("${AllTypeOfLoanController.nameOfApplyStudentLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -480,7 +480,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                                Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfApplyStudentIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                               ),
                             ],
@@ -494,7 +494,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your Student Loan!")?Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -518,7 +518,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -527,14 +527,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfCreditCardLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -546,7 +546,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfCreditCardIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                               ),
                             ],
@@ -562,7 +562,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -571,14 +571,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfApplyCreditCardLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -590,7 +590,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfApplyCreditCardIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                               ),
                             ],
@@ -604,7 +604,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your Credit Card Score!")?Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding:  EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -628,7 +628,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -637,14 +637,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfBusinessLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:  EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -656,7 +656,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfBusinessIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                               ),
                             ],
@@ -672,7 +672,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -681,14 +681,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfApplyBusinessLoanLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:  EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -700,7 +700,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfAppluBusinessIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                               ),
                             ],
@@ -714,7 +714,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your business Card Loan!")?Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -738,7 +738,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -747,14 +747,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfPersonalLineOfCreditString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -766,7 +766,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${AllTypeOfLoanController.nameOfPersonalLinesIntrodutionLoanString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                               ),
                             ],
@@ -782,7 +782,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -791,14 +791,14 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${AllTypeOfLoanController.nameOfApplyPersonalLineOfCreditString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20,fontFamily: "Regular"),),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -824,7 +824,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your Personal Card Loan!?")?Expanded(
               child:  Padding(
-                padding: const EdgeInsets.all(10),
+                padding:  EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -848,7 +848,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -864,7 +864,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -892,7 +892,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:  EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -908,7 +908,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -934,7 +934,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your payday Card Loan!")?Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -958,7 +958,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -974,7 +974,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -1002,7 +1002,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -1018,7 +1018,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding: EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -1044,7 +1044,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             (GlobalVarr.creditCardSeletType.value=="Calculate your Auto Title Loan!")?Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero
@@ -1068,7 +1068,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding:EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -1084,7 +1084,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -1112,7 +1112,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Container(
                       decoration:  BoxDecoration(
                         color:colorDimRed,
@@ -1128,7 +1128,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(12),
+                      padding:EdgeInsets.all(12.r),
                       child: Container(
                         decoration:  BoxDecoration(
                           color:colorDimRed,
@@ -1154,7 +1154,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
             ):
             Expanded(
               child:  Padding(
-                padding: const EdgeInsets.all(10),
+                padding:  EdgeInsets.all(10.r),
                 child: Column(
                   children: [
                     //caclulatero

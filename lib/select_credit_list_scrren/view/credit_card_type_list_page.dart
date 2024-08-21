@@ -51,7 +51,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
               ),
               Padding(
                 padding:
-                const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                 EdgeInsets.symmetric(vertical: 8.r, horizontal: 16.r),
                 child: ListView.builder(
                   shrinkWrap: true,
                   itemCount: (GlobalVarr.creditCardSeletType.value ==
@@ -111,7 +111,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                       child: Container(
                         width: screenWidth,
                         height: 55,
-                        margin: const EdgeInsets.symmetric(vertical: 8),
+                        margin:  EdgeInsets.symmetric(vertical: 8.r),
                         decoration: const BoxDecoration(
                           gradient:
                           LinearGradient(colors: [colorPink, colorRed]),
@@ -228,7 +228,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
               (_selectedCreditCardType != null||_selectedCreditCardTypeSalery!=null||_selectedCreditCardTypeLoanPayment!=null||_selectedCreditCardTypeLoanMoth!=null||_selectedCreditCardTypeProfession!=null)?Align(
                 alignment: Alignment.bottomCenter,
                 child: Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: EdgeInsets.all(20.r),
                   child: SizedBox(
                       height: 80,
                       width: 130,

@@ -38,7 +38,7 @@ class _AllTypesOfLoanPageState extends State<AllTypesOfLoanPage> {
                  Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(15),
+                        padding:  EdgeInsets.all(15.r),
                         child: InkWell(onTap: () {
                           Navigator.pop(context);
                         },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
@@ -60,7 +60,7 @@ class _AllTypesOfLoanPageState extends State<AllTypesOfLoanPage> {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 40,vertical:20),
+                padding:  EdgeInsets.symmetric(horizontal: 40.r,vertical:20.r),
                 child: ListView.builder(shrinkWrap: true,itemCount: AllTypeOfLoanController.nameOfAllTypeOfLoanList.length,itemBuilder: (context, index) {
                   return  Column(
                     children: [

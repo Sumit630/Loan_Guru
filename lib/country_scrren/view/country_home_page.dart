@@ -95,8 +95,8 @@ class _CountryHomePageState extends State<CountryHomePage> {
                           _filterCountries(value);
                         },
                         decoration: InputDecoration(
-                          icon: const Padding(
-                            padding: EdgeInsets.all(10.0),
+                          icon:  Padding(
+                            padding: EdgeInsets.all(10.0.r),
                             child: Icon(Icons.search,color:Colors.white,),
                           ),
                           suffixIcon: InkWell(onTap: () {
@@ -112,7 +112,7 @@ class _CountryHomePageState extends State<CountryHomePage> {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+                    padding: EdgeInsets.symmetric(horizontal: 20.r,vertical: 20.r),
                     child: ListView.builder(itemCount:filteredCountries.length,shrinkWrap: true,itemBuilder: (context, index) {
                       String creditCardType = filteredCountries[index];
                       print("list Count :; ${CreditCountryController.nameOfCountryList[index]}||Image ${CreditCountryController.imageOfCountry[index]}");
@@ -125,7 +125,7 @@ class _CountryHomePageState extends State<CountryHomePage> {
                         child: Container(
                           width: screenWidth,
                           height: 55,
-                          margin: const EdgeInsets.symmetric(vertical: 8),
+                          margin: EdgeInsets.symmetric(vertical: 8.r),
                           decoration: const BoxDecoration(
                             gradient:
                             LinearGradient(colors: [colorPink, colorRed]),
@@ -134,7 +134,7 @@ class _CountryHomePageState extends State<CountryHomePage> {
                           child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding:  EdgeInsets.all(8.0.r),
                                 child: Container(
                                   height: 45,
                                   width: 45,

@@ -38,7 +38,7 @@ class _ChackCreditOnlineHomePageState extends State<ChackCreditOnlineHomePage> {
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(15),
+                        padding: EdgeInsets.all(15.r),
                         child: InkWell(onTap: () {
                           Navigator.pop(context);
                         },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
@@ -62,7 +62,7 @@ class _ChackCreditOnlineHomePageState extends State<ChackCreditOnlineHomePage> {
             Text("Check Crediit Scrooe Online Tool",style: TextStyle(fontSize: 18.sp,color: Colors.black,fontFamily: "Regular"),),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+                padding:EdgeInsets.symmetric(horizontal: 20.r,vertical: 20.r),
                 child: ListView.builder(
                   itemCount:CheckCreditCardContrlloer.checkCreditCardList.length,
                   shrinkWrap: true,itemBuilder: (context, index) {

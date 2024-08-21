@@ -14,7 +14,7 @@ class AdsLoader {
             child: Container(
               height: 120,
               width: 120,
-              padding: EdgeInsets.all(15),
+              padding: EdgeInsets.all(15.r),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10)

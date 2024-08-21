@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:easy_audience_network/ad/banner_ad.dart' as F;
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -184,7 +185,7 @@ class _DisplayBannerAdsState extends State<DisplayBannerAds> {
         baseColor: Colors.grey.withOpacity(0.5),
         highlightColor: Colors.grey.withOpacity(0.1),
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding:  EdgeInsets.all(8.0.r),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[

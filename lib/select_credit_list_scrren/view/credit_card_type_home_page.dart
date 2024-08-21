@@ -35,7 +35,7 @@ class _CreditCardTypeHomePageState extends State<CreditCardTypeHomePage> {
               child: Text("Please   Select   your   Credit   Score,\nSalary,   Loan Payment,  Loan  Month &\nProfession",textAlign: TextAlign.center,style: TextStyle(fontFamily: "Regular",color: Colors.white,fontSize: 22.sp),),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 20),
+              padding: EdgeInsets.symmetric(horizontal: 30.r,vertical: 20.r),
               child: ListView.separated(shrinkWrap: true,itemBuilder: (context, index) {
                 // ignore: prefer_const_constructors
                 String creditCardType = CreditCardTypeController.nameOfCreditCardTypeHomeList[index];

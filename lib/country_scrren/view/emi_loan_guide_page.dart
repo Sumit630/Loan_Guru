@@ -44,7 +44,7 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
             Expanded(
               child: SingleChildScrollView(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40,vertical:20),
+                  padding: EdgeInsets.symmetric(horizontal: 40.r,vertical:20.r),
                   child: Column(
                     children: [
                       Text("All Financial Tools",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 24.sp,fontFamily: "Regular"),),

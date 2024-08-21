@@ -38,7 +38,7 @@ class _LoanGuidePageState extends State<LoanGuidePage> {
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(15),
+                        padding: EdgeInsets.all(15.r),
                         child: InkWell(onTap: () {
                           Navigator.pop(context);
                         },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
@@ -66,7 +66,7 @@ class _LoanGuidePageState extends State<LoanGuidePage> {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(12),
+                padding: EdgeInsets.all(12.r),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Container(
@@ -77,7 +77,7 @@ class _LoanGuidePageState extends State<LoanGuidePage> {
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
@@ -94,7 +94,7 @@ class _LoanGuidePageState extends State<LoanGuidePage> {
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${LoanController.loanIntrodutinList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20.sp,fontFamily: "Regular"),),
                               ),
                             ],

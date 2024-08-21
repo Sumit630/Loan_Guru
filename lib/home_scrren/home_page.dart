@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                       alignment: Alignment.topRight,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          padding:  EdgeInsets.symmetric(horizontal: 15.r),
                           child: Row(
                             children: [
                               Image(
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                          padding: EdgeInsets.symmetric(horizontal: 12.r),
                           child: Container(
                             height: screenHeight / 15,
                             width: screenWidth / 1.7,
@@ -177,16 +177,16 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               2.ph,
-              const Text(
+               Text(
                 "Select Your Gender",
                 style: TextStyle(
-                    fontFamily: "Regular", fontSize: 25, color: Colors.black),
+                    fontFamily: "Regular", fontSize: 25.sp, color: Colors.black),
               ),
               1.ph,
               Container(
                 height: screenHeight / 4.5,
                 width: screenWidth,
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.all(10.r),
                 //color:colorDimRed ,
                 decoration: const BoxDecoration(
                     color: colorDimRed,
@@ -262,7 +262,7 @@ class _HomePageState extends State<HomePage> {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: EdgeInsets.all(20.r),
                   child: SizedBox(
                       height: 80,
                       width: 130,

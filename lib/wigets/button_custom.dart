@@ -75,7 +75,7 @@ class _CustomButtonState extends State<CustomButton> {
                 children: [
                   widget.iconSvgPath.isNotEmpty
                       ? Padding(
-                    padding: const EdgeInsets.only(left: 10),
+                    padding: EdgeInsets.only(left: 10.r),
                     child: Image.asset(
                       widget.iconSvgPath,
                       color: widget.color,

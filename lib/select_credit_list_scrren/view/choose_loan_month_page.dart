@@ -56,7 +56,7 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
             ),
             Padding(
               padding:
-              const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              EdgeInsets.symmetric(vertical: 8.r, horizontal: 16.r),
               child: ListView.builder(shrinkWrap: true,itemCount:CreditCardTypeController.nameOfCreditCardChooseLoanMonthList.length,itemBuilder: (context, index) {
                 return  InkWell(
                   onTap: () {
@@ -65,7 +65,7 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
                   child: Container(
                     width: screenWidth,
                     height: 55,
-                    margin: const EdgeInsets.symmetric(vertical: 8),
+                    margin: EdgeInsets.symmetric(vertical: 8.r),
                     decoration: const BoxDecoration(
                       gradient:
                       LinearGradient(colors: [colorPink, colorRed]),

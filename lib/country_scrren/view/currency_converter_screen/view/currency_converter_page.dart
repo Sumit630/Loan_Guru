@@ -75,7 +75,7 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(15),
+                        padding:  EdgeInsets.all(15.r),
                         child: InkWell(onTap: () {
                           Navigator.pop(context);
                         },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
@@ -102,7 +102,7 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
               ),
             ),
             Expanded(child: Padding(
-              padding: const EdgeInsets.all(12),
+              padding:  EdgeInsets.all(12.r),
               child: Column(children: [
                 2.ph,
                 DropdownButton<String>(

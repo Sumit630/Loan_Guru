@@ -39,7 +39,7 @@ class _MutualFundPageState extends State<MutualFundPage> {
                   Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(15),
+                        padding:  EdgeInsets.all(15.r),
                         child: InkWell(onTap: () {
                           Navigator.pop(context);
                         },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
@@ -67,7 +67,7 @@ class _MutualFundPageState extends State<MutualFundPage> {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(12),
+                padding:EdgeInsets.all(12.r),
                 child: Column(crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Container(
@@ -78,7 +78,7 @@ class _MutualFundPageState extends State<MutualFundPage> {
                       ),
                       alignment: Alignment.center,
                       child:  Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10.r),
                         child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                       ),
                     ),
@@ -95,7 +95,7 @@ class _MutualFundPageState extends State<MutualFundPage> {
                           child: Column(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(10),
+                                padding: EdgeInsets.all(10.r),
                                 child: Text("${MutualfundController.mutaulfundIntrodution}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20.sp,fontFamily: "Regular"),),
                               ),
                             ],

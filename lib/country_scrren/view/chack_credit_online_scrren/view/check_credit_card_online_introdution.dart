@@ -42,7 +42,7 @@ class _CheckCreditCardOnlineIntrodutionState extends State<CheckCreditCardOnline
                       Row(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.all(15),
+                            padding: EdgeInsets.all(15.r),
                             child: InkWell(onTap: () {
                               Navigator.pop(context);
                             },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
@@ -74,7 +74,7 @@ class _CheckCreditCardOnlineIntrodutionState extends State<CheckCreditCardOnline
                 ),
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.all(12),
+                    padding: EdgeInsets.all(12.r),
                     child: Column(crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Container(
@@ -85,7 +85,7 @@ class _CheckCreditCardOnlineIntrodutionState extends State<CheckCreditCardOnline
                           ),
                           alignment: Alignment.center,
                           child:  Padding(
-                            padding: EdgeInsets.all(10),
+                            padding: EdgeInsets.all(10.r),
                             child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
                           ),
                         ),
@@ -102,7 +102,7 @@ class _CheckCreditCardOnlineIntrodutionState extends State<CheckCreditCardOnline
                               child: Column(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.all(10),
+                                    padding: EdgeInsets.all(10.r),
                                     child: Text("${(GlobalVarr.creditCardSeletType.value=="0")?CheckCreditCardContrlloer.buyCreditScoreString:(GlobalVarr.creditCardSeletType.value=="1")?CheckCreditCardContrlloer.companyReportString:(GlobalVarr.creditCardSeletType.value=="2")?CheckCreditCardContrlloer.culculateString:(GlobalVarr.creditCardSeletType.value=="3")?CheckCreditCardContrlloer.disputeResolutionString:(GlobalVarr.creditCardSeletType.value=="4")?CheckCreditCardContrlloer.mediaCenter:CheckCreditCardContrlloer.creditMantri}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20.sp,fontFamily: "Regular"),),
                                   ),
                                 ],

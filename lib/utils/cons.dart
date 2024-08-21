@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 double? wd;
 double? hg;
 late Map cities;
 
-const double defaultPadding = 8;
+double defaultPadding = 8.r;
 const double defultBoderRadius = 6;
 
 const double uiRoundness = 6;
