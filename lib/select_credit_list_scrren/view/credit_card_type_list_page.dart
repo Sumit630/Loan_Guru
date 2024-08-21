@@ -46,7 +46,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                   style: TextStyle(
                       fontFamily: "Regular",
                       color: Colors.white,
-                      fontSize: 20.sp),
+                      fontSize: 17.sp),
                 ),
               ),
               Padding(
@@ -209,7 +209,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                   fontFamily: "Regular",
-                                  fontSize: 20.sp),
+                                  fontSize: 18.sp),
                             ),
                             const Spacer(),
                             const Icon(

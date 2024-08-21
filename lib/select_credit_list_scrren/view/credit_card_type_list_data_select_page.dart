@@ -41,7 +41,7 @@ class _CreditCardTypeListDataSelectPageState extends State<CreditCardTypeListDat
                     style: TextStyle(
                         fontFamily: "Regular",
                         color: Colors.white,
-                        fontSize: 34.sp),
+                        fontSize: 24.sp),
                   ),
                   Text(
                     "How Do You Want To Pay Loan Amount",
@@ -49,7 +49,7 @@ class _CreditCardTypeListDataSelectPageState extends State<CreditCardTypeListDat
                     style: TextStyle(
                         fontFamily: "Regular",
                         color: Colors.white,
-                        fontSize: 22.sp),
+                        fontSize: 18.sp),
                   ),
                 ],
               ),
@@ -80,7 +80,7 @@ class _CreditCardTypeListDataSelectPageState extends State<CreditCardTypeListDat
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
                               fontFamily: "Regular",
-                              fontSize: 20.sp),
+                              fontSize: 18.sp),
                         ),
                       ],
                     ),

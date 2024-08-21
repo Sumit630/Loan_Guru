@@ -169,7 +169,7 @@ class _AllTypesOfLoanListPageState extends State<AllTypesOfLoanListPage> {
                             fontWeight: FontWeight.w900,
                             color: Colors.white,
                             fontFamily: "Regular",
-                            fontSize: 20.sp),
+                            fontSize: 18.sp),
                       ),
                     ],
                   ),

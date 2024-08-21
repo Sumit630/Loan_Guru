@@ -41,7 +41,7 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
                     style: TextStyle(
                         fontFamily: "Regular",
                         color: Colors.white,
-                        fontSize: 34.sp),
+                        fontSize: 24.sp),
                   ),
                   Text(
                     "For How Many Days You Need The Loan ?",
@@ -49,7 +49,7 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
                     style: TextStyle(
                         fontFamily: "Regular",
                         color: Colors.white,
-                        fontSize: 22.sp),
+                        fontSize: 18.sp),
                   ),
                 ],
               ),
@@ -80,7 +80,7 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
                               fontFamily: "Regular",
-                              fontSize: 20.sp),
+                              fontSize: 18.sp),
                         ),
                       ],
                     ),

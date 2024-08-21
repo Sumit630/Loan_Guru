@@ -32,7 +32,7 @@ class _CreditCardTypeHomePageState extends State<CreditCardTypeHomePage> {
                 gradient:  LinearGradient(colors: [colorPink, colorRed]),
               ),
               alignment: Alignment.center,
-              child: Text("Please   Select   your   Credit   Score,\nSalary,   Loan Payment,  Loan  Month &\nProfession",textAlign: TextAlign.center,style: TextStyle(fontFamily: "Regular",color: Colors.white,fontSize: 22.sp),),
+              child: Text("Please   Select   your   Credit   Score,\nSalary,   Loan Payment,  Loan  Month &\nProfession",textAlign: TextAlign.center,style: TextStyle(fontFamily: "Regular",color: Colors.white,fontSize: 18.sp),)
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 30.r,vertical: 20.r),

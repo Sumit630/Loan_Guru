@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
                     "Select Your Right Information For Grad Opportunity\nTo Get Loan In Easy Way With Us.",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontSize: 18.sp,
+                        fontSize: 16.sp,
                         color: Colors.black,
                         fontFamily: "Regular"),
                   ),
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                                   "How old you are?",
                                   textStyle: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 16.sp,
+                                    fontSize: 14.sp,
                                     fontFamily: "Regular",
                                   ),
                                   speed: const Duration(
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Regular",
-                          fontSize: 24.sp),
+                          fontSize: 22.sp),
                     ),
                     2.ph,
                     Stack(
@@ -180,7 +180,7 @@ class _HomePageState extends State<HomePage> {
                Text(
                 "Select Your Gender",
                 style: TextStyle(
-                    fontFamily: "Regular", fontSize: 25.sp, color: Colors.black),
+                    fontFamily: "Regular", fontSize: 23.sp, color: Colors.black),
               ),
               1.ph,
               Container(
