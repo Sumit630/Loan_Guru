@@ -77,7 +77,7 @@ class _CountryHomePageState extends State<CountryHomePage> {
                             style: TextStyle(
                                 fontFamily: "Regular",
                                 color: Colors.white,
-                                fontSize: 24.sp),
+                                fontSize: 20.sp),
                           ),
                           InkWell(onTap: () {
                             selectSharsh(true);
@@ -166,7 +166,7 @@ class _CountryHomePageState extends State<CountryHomePage> {
                                 filteredCountries[index],
                                 textAlign: TextAlign.start,
                                 style:  TextStyle(
-                                    fontWeight: FontWeight.w900,
+                                    fontWeight: FontWeight.w500,
                                     color: Colors.white,
                                     fontFamily: "Regular",
                                     fontSize: 18.sp),

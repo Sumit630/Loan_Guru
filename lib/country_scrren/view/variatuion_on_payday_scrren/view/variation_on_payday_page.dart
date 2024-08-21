@@ -54,7 +54,7 @@ class _VariationOnPaydayPageState extends State<VariationOnPaydayPage> {
                             style: TextStyle(
                                 fontFamily: "Regular",
                                 color: Colors.white,
-                                fontSize: 24.sp),
+                                fontSize: 20.sp),
                           ),
                         ),
                       ),
@@ -78,7 +78,7 @@ class _VariationOnPaydayPageState extends State<VariationOnPaydayPage> {
                       alignment: Alignment.center,
                       child:  Padding(
                         padding: EdgeInsets.all(10.r),
-                        child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
+                        child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w500,fontSize: 18.sp,fontFamily: "Regular"),),
                       ),
                     ),
                     2.ph,
@@ -95,7 +95,7 @@ class _VariationOnPaydayPageState extends State<VariationOnPaydayPage> {
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10.r),
-                                child: Text("${VariatuionOnPayDayController.variationLoansString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20.sp,fontFamily: "Regular"),),
+                                child: Text("${VariatuionOnPayDayController.variationLoansString}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w500,fontSize:18.sp,fontFamily: "Regular"),),
                               ),
                             ],
                           ),

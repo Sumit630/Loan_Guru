@@ -50,7 +50,7 @@ class _CreditCardTypeHomePageState extends State<CreditCardTypeHomePage> {
                   },
                   child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(CreditCardTypeController.nameOfCreditCardTypeHomeList[index],textAlign: TextAlign.start,style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontFamily: "Regular",fontSize: 20.sp),),
+                      Text(CreditCardTypeController.nameOfCreditCardTypeHomeList[index],textAlign: TextAlign.start,style: TextStyle(fontWeight: FontWeight.w500,color: Colors.black,fontFamily: "Regular",fontSize:18.sp),),
                       Radio<String>(
                         value: CreditCardTypeController.nameOfCreditCardTypeHomeList[index],
                         groupValue: _selectedCreditCardType,

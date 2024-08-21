@@ -47,7 +47,7 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                   padding: EdgeInsets.symmetric(horizontal: 40.r,vertical:20.r),
                   child: Column(
                     children: [
-                      Text("All Financial Tools",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 24.sp,fontFamily: "Regular"),),
+                      Text("All Financial Tools",style: TextStyle(fontWeight: FontWeight.w400,color: Colors.black,fontSize: 20.sp,fontFamily: "Regular"),),
                       2.ph,
                       InkWell(onTap: () {
                         nextPageFade(const AllTypesOfLoanPage());
@@ -91,7 +91,7 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                         nextPageFade(const FinancePage());
                       },child: const Image(image: AssetImage("assets/images/home_finance_tips.webp"))),
                       2.ph,
-                      Text("Other Credit Card Tools",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 24.sp,fontFamily: "Regular"),),
+                      Text("Other Credit Card Tools",style: TextStyle(fontWeight: FontWeight.w400,color: Colors.black,fontSize: 20.sp,fontFamily: "Regular"),),
                       2.ph,
                       InkWell(onTap: () {
                         nextPageFade(const ChackCreditOnlineHomePage());
@@ -101,7 +101,7 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                         nextPageFade(CheckCreditOfflinePage());
                       },child: const Image(image: AssetImage("assets/images/home_check_credit_offline.webp"))),
                       2.ph,
-                      Text("Payment LoanTools",style: TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 24.sp,fontFamily: "Regular"),),
+                      Text("Payment LoanTools",style: TextStyle(fontWeight: FontWeight.w400,color: Colors.black,fontSize: 20.sp,fontFamily: "Regular"),),
                       2.ph,
                       InkWell(onTap: () {
                         nextPageFade(const PayDayPage());

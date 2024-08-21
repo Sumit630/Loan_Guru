@@ -50,7 +50,7 @@ class _ChackCreditOnlineHomePageState extends State<ChackCreditOnlineHomePage> {
                         style: TextStyle(
                             fontFamily: "Regular",
                             color: Colors.white,
-                            fontSize: 24.sp),
+                            fontSize: 20.sp),
                       ),
                       const Spacer(),
                     ],

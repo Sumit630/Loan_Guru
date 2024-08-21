@@ -62,7 +62,7 @@ class _CheckCreditCardOnlineIntrodutionState extends State<CheckCreditCardOnline
                                 style: TextStyle(
                                     fontFamily: "Regular",
                                     color: Colors.white,
-                                    fontSize: 24.sp),
+                                    fontSize: 20.sp),
                               ),
                             ),
                           ),
@@ -86,7 +86,7 @@ class _CheckCreditCardOnlineIntrodutionState extends State<CheckCreditCardOnline
                           alignment: Alignment.center,
                           child:  Padding(
                             padding: EdgeInsets.all(10.r),
-                            child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize: 20.sp,fontFamily: "Regular"),),
+                            child: Text("${InterestController.interestList}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w500,fontSize: 18.sp,fontFamily: "Regular"),),
                           ),
                         ),
                         2.ph,
@@ -103,7 +103,7 @@ class _CheckCreditCardOnlineIntrodutionState extends State<CheckCreditCardOnline
                                 children: [
                                   Padding(
                                     padding: EdgeInsets.all(10.r),
-                                    child: Text("${(GlobalVarr.creditCardSeletType.value=="0")?CheckCreditCardContrlloer.buyCreditScoreString:(GlobalVarr.creditCardSeletType.value=="1")?CheckCreditCardContrlloer.companyReportString:(GlobalVarr.creditCardSeletType.value=="2")?CheckCreditCardContrlloer.culculateString:(GlobalVarr.creditCardSeletType.value=="3")?CheckCreditCardContrlloer.disputeResolutionString:(GlobalVarr.creditCardSeletType.value=="4")?CheckCreditCardContrlloer.mediaCenter:CheckCreditCardContrlloer.creditMantri}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w600,fontSize:20.sp,fontFamily: "Regular"),),
+                                    child: Text("${(GlobalVarr.creditCardSeletType.value=="0")?CheckCreditCardContrlloer.buyCreditScoreString:(GlobalVarr.creditCardSeletType.value=="1")?CheckCreditCardContrlloer.companyReportString:(GlobalVarr.creditCardSeletType.value=="2")?CheckCreditCardContrlloer.culculateString:(GlobalVarr.creditCardSeletType.value=="3")?CheckCreditCardContrlloer.disputeResolutionString:(GlobalVarr.creditCardSeletType.value=="4")?CheckCreditCardContrlloer.mediaCenter:CheckCreditCardContrlloer.creditMantri}",textAlign: TextAlign.center,style: TextStyle(color: textBleckColor,fontWeight: FontWeight.w500,fontSize:18.sp,fontFamily: "Regular"),),
                                   ),
                                 ],
                               ),

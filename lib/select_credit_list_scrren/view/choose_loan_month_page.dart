@@ -41,7 +41,7 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
                     style: TextStyle(
                         fontFamily: "Regular",
                         color: Colors.white,
-                        fontSize: 24.sp),
+                        fontSize: 22.sp),
                   ),
                   Text(
                     "For How Many Days You Need The Loan ?",
@@ -77,7 +77,7 @@ class _ChooseLoanMonthPageState extends State<ChooseLoanMonthPage> {
                           CreditCardTypeController.nameOfCreditCardChooseLoanMonthList[index],
                           textAlign: TextAlign.start,
                           style:  TextStyle(
-                              fontWeight: FontWeight.w900,
+                              fontWeight: FontWeight.w400,
                               color: Colors.white,
                               fontFamily: "Regular",
                               fontSize: 18.sp),

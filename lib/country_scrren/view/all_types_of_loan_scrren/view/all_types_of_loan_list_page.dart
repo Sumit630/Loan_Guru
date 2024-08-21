@@ -59,7 +59,7 @@ class _AllTypesOfLoanListPageState extends State<AllTypesOfLoanListPage> {
                         style: TextStyle(
                             fontFamily: "Regular",
                             color: Colors.white,
-                            fontSize: 24.sp),
+                            fontSize: 20.sp),
                       ),
                       const Spacer(),
                     ],
@@ -166,7 +166,7 @@ class _AllTypesOfLoanListPageState extends State<AllTypesOfLoanListPage> {
                         AllTypeOfLoanController.nameOfHomeEquityLoanList[index],
                         textAlign: TextAlign.start,
                         style:  TextStyle(
-                            fontWeight: FontWeight.w900,
+                            fontWeight: FontWeight.w400,
                             color: Colors.white,
                             fontFamily: "Regular",
                             fontSize: 18.sp),

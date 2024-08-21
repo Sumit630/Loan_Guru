@@ -91,7 +91,7 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
                             style: TextStyle(
                                 fontFamily: "Regular",
                                 color: Colors.white,
-                                fontSize: 24.sp),
+                                fontSize: 20.sp),
                           ),
                         ),
                       ),

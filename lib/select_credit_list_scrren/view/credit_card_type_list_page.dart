@@ -46,7 +46,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                   style: TextStyle(
                       fontFamily: "Regular",
                       color: Colors.white,
-                      fontSize: 17.sp),
+                      fontSize: 18.sp),
                 ),
               ),
               Padding(
@@ -206,7 +206,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
                                   .nameOfCreditCardProfessionList[index],
                               textAlign: TextAlign.start,
                               style:  TextStyle(
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.w400,
                                   color: Colors.white,
                                   fontFamily: "Regular",
                                   fontSize: 18.sp),

@@ -35,17 +35,19 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    "Select Your Right Information For Grad Opportunity\nTo Get Loan In Easy Way With Us.",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 16.sp,
-                        color: Colors.black,
-                        fontFamily: "Regular"),
+                  Expanded(
+                    child: Text(
+                      "Select Your Right Information For Grad Opportunity\nTo Get Loan In Easy Way With Us.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 14.sp,
+                          color: Colors.black,
+                          fontFamily: "Regular"),
+                    ),
                   ),
                 ],
               ),
-              2.ph,
+              3.ph,
               Expanded(
                   flex: 3,
                   child: Container(
@@ -103,7 +105,6 @@ class _HomePageState extends State<HomePage> {
                   )),
               2.ph,
               Container(
-                height: screenHeight / 6,
                 width: screenWidth,
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(colors: [colorPink, colorRed]),
@@ -116,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Regular",
-                          fontSize: 22.sp),
+                          fontSize: 20.sp),
                     ),
                     2.ph,
                     Stack(
@@ -154,7 +155,7 @@ class _HomePageState extends State<HomePage> {
                                     '$age',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 24.sp,
+                                      fontSize: 20.sp,
                                       fontWeight: selectedAge.value == age
                                           ? FontWeight.bold
                                           : FontWeight.normal,
@@ -180,7 +181,7 @@ class _HomePageState extends State<HomePage> {
                Text(
                 "Select Your Gender",
                 style: TextStyle(
-                    fontFamily: "Regular", fontSize: 23.sp, color: Colors.black),
+                    fontFamily: "Regular", fontSize: 18.sp, color: Colors.black),
               ),
               1.ph,
               Container(
