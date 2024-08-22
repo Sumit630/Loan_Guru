@@ -1,4 +1,5 @@
 
+import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -15,7 +16,8 @@ import 'firebase_optiions.dart';
 
 const String appName = "Credit card guide";
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized(); // add your url
+  WidgetsFlutterBinding.ensureInitialized();
+  FacebookAudienceNetwork.init();// add your url
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

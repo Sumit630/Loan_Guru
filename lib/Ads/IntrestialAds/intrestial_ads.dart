@@ -15,6 +15,7 @@ class InterstitialAds {
     print("Satatus ${PreferencesManager.get_Status}");
     if (PreferencesManager.get_Status == "on") {
       print("Step12");
+      // ios ads
       if (PreferencesManager.get_Click_Flag == "on") {
         if (Constant.IS_TIME_INTERVAL == true) {
            if (PreferencesManager.get_Adstyle == "normal") {
@@ -35,7 +36,8 @@ class InterstitialAds {
           print("time interval");
           callBack();
         }
-      } else {
+      }
+      else {
         String? getClick = PreferencesManager.get_Click as String?;
         if (Constant.Front_Counter % int.parse(getClick!) == 0) {
           if (PreferencesManager.get_Adstyle == "normal") {
@@ -74,7 +76,7 @@ class InterstitialAds {
       }
     }
     else {
-      print("esadgzersg");
+                                                                                                                                                                                                                                                                                                                                   print("esadgzersg");
       callBack();
     }
   }

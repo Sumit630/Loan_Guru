@@ -5,6 +5,9 @@ class AdsData {
     this.admobreward,
     this.admobopen,
     this.admobnative,
+    this.androindIntraval,
+    this.androindBanner,
+    this.andriondgoogleNative,
     this.fbfull,
     this.fbbanner,
     this.fbnative,
@@ -24,6 +27,9 @@ class AdsData {
     admobbanner = json['googleBanner'];
     admobopen = json['googleOpen'];
     admobnative = json['googleNative'];
+    androindIntraval = json['androindIntrstitial'];
+    androindBanner = json['androindBanner'];
+    andriondgoogleNative = json['andriondgoogleNative'];
     fbfull = json['fb-full'];
     fbbanner = json['fb-banner'];
     fbnative = json['fb-native'];
@@ -42,6 +48,9 @@ class AdsData {
   String? admobbanner;
   String? admobopen;
   String? admobnative;
+  String? androindIntraval;
+  String? androindBanner;
+  String? andriondgoogleNative;
   String? fbfull;
   String? fbbanner;
   String? fbnative;
@@ -62,6 +71,9 @@ class AdsData {
     map['googleBanner'] = admobbanner;
     map['googleOpen'] = admobopen;
     map['googleNative'] = admobnative;
+    map['androindIntrstitial'] = androindIntraval;
+    map['androindBanner'] = androindBanner;
+    map['andriondgoogleNative'] = andriondgoogleNative;
     map['fb-full'] = fbfull;
     map['fb-banner'] = fbbanner;
     map['fb-native'] = fbnative;

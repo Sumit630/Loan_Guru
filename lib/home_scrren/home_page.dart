@@ -216,7 +216,9 @@ class _HomePageState extends State<HomePage> {
                               children: [
                                 InkWell(
                                   onTap: () {
+                                    InterstitialAds.showAds(callBack : (){
                                       selectedGender(0);
+                                    });
                                   },
                                   child: Container(
                                     height: 100,
@@ -234,7 +236,10 @@ class _HomePageState extends State<HomePage> {
                                 4.pw,
                                 InkWell(
                                   onTap: () {
-                                    selectedGender(1);
+                                    InterstitialAds.showAds(callBack : (){
+                                      selectedGender(1);
+                                    });
+
                                   },
                                   child: Container(
                                     height: 100,

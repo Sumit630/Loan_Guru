@@ -47,6 +47,7 @@ dependencies:
   dio: ^4.0.6
   firebase_analytics:
   easy_audience_network: ^0.0.6
+  facebook_audience_network:
   liquid_progress_indicator_v2: ^0.5.0
   connectivity_plus: ^4.0.2
   firebase_remote_config:

@@ -21,6 +21,9 @@ class PreferencesManager {
   static  String admobReward = "admob-reward";
   static  String admobOpen = "admob-open";
   static  String admobNative = "admob-native";
+  static String androindIntrval="androindIntrval";
+  static String androindBanner="androindBanner";
+  static String androindNative="androindNative";
   static  String adxFull = "adx-full";
   static  String adxBanner = "adx-banner";
   static  String adxOpen = "adx-open";
@@ -58,6 +61,9 @@ class PreferencesManager {
     admobFull="${adsData.admobfull}";
     admobBanner="${adsData.admobbanner}";
     admobReward="${adsData.admobreward}";
+    androindBanner="${adsData.androindBanner}";
+    androindIntrval="${adsData.androindIntraval}";
+    androindNative="${adsData.andriondgoogleNative}";
     admobOpen="${adsData.admobopen}";
     admobNative="${adsData.admobnative}";
     FBFull="${adsData.fbfull}";
