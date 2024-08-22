@@ -9,6 +9,9 @@ import 'package:loan_guru/wigets/button_custom.dart';
 import 'package:loan_guru/wigets/textfiled.dart';
 import 'package:scroll_loop_auto_scroll/scroll_loop_auto_scroll.dart';
 
+import '../../../../Ads/AdsConstants/ads_preference.dart';
+import '../../../../Ads/BannerAds/banner_ads.dart';
+import '../../../../Ads/NativeAds/native_ads.dart';
 import '../../../../utils/color.dart';
 import '../controller/all_type_of_loan_controller.dart';
 
@@ -36,6 +39,10 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
       child: Scaffold(
         body: Column(
           children: [
+            const Align(
+              alignment: Alignment.bottomCenter,
+              child: DisplayBannerAds(),
+            ),
             Container(
               height: screenHeight / 12.8,
               width: screenWidth,
@@ -1174,6 +1181,7 @@ class _AllTypeOfLoanIntrodutionPageState extends State<AllTypeOfLoanIntrodutionP
                 ),
               ),
             ),
+            (PreferencesManager.get_Status=="on")?NativeAds():const SizedBox(),
           ],
         ),
       ),

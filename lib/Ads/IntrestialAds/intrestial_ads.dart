@@ -17,18 +17,11 @@ class InterstitialAds {
       print("Step12");
       if (PreferencesManager.get_Click_Flag == "on") {
         if (Constant.IS_TIME_INTERVAL == true) {
-          if (PreferencesManager.getPref(PreferencesManager.get_Adstyle) == "normal") {
-            //if (PreferencesManager.getPref(PreferencesManager.get_Ad_Flag) == "admob") {
-            // loadRewardedAd(callBack);
-            admobInterstitialAdsCreate(callBack);
-            //} else {
-            //callBack();
-            //}
-          } else if (PreferencesManager.get_Adstyle == "normal") {
+           if (PreferencesManager.get_Adstyle == "normal") {
             if (Constant.Alt_Cnt_Inter == 2) {
               Constant.Alt_Cnt_Inter = 1;
-              loadRewardedAd(callBack);
-              //admobInterstitialAdsCreate(callBack);
+              //loadRewardedAd(callBack);
+              admobInterstitialAdsCreate(callBack);
             } else {
               Constant.Alt_Cnt_Inter++;
               admobInterstitialAdsCreate(callBack);
@@ -50,8 +43,8 @@ class InterstitialAds {
             //admobInterstitialAdsCreate(callBack);
             if (Constant.Alt_Cnt_Inter == 2) {
               Constant.Alt_Cnt_Inter = 1;
-              loadRewardedAd(callBack);
-              //admobInterstitialAdsCreate(callBack);
+              //loadRewardedAd(callBack);
+              admobInterstitialAdsCreate(callBack);
             } else {
               Constant.Alt_Cnt_Inter++;
               admobInterstitialAdsCreate(callBack);
@@ -88,7 +81,7 @@ class InterstitialAds {
   static RewardedAd? _rewardedAd;
   bool _isRewardedAdReady = false;
   static admobInterstitialAdsCreate(Function callBack) {
-    AdsLoader.showLoader();
+    //AdsLoader.showLoader();
     InterstitialAd.load(
       adUnitId:
       PreferencesManager.admobFull,
@@ -107,23 +100,22 @@ class InterstitialAds {
                           PreferencesManager.get_AD_Time)) *
                           10), () {
                 debugPrint(
-                    'Time ----------- ${int.parse((PreferencesManager.get_AD_Time)) * 10}');
+                    'Time ----------- ${int.parse((PreferencesManager.get_AD_Time)) * 2}');
                 Constant.IS_TIME_INTERVAL = true;
               });
-              callBack();
             },
             // onAdFailedToShowFullScreenContent:
             //     (InterstitialAd ad, AdError error) {
             //   ad.dispose();
             // },
           );
-
-          AdsLoader.hideLoader();
+          callBack();
+          //AdsLoader.hideLoader();
           interstitialAd!.show();
         },
         onAdFailedToLoad: (LoadAdError error) {
           interstitialAd = null;
-          AdsLoader.hideLoader();
+        //  AdsLoader.hideLoader();
           callBack();
         },
       ),

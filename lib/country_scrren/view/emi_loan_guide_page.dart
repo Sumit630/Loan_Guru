@@ -14,6 +14,9 @@ import 'package:loan_guru/country_scrren/view/why_payday_scrren/view/why_paydey_
 import 'package:loan_guru/global_var.dart';
 import 'package:loan_guru/utils/cons.dart';
 
+import '../../Ads/AdsConstants/ads_preference.dart';
+import '../../Ads/IntrestialAds/intrestial_ads.dart';
+import '../../Ads/NativeAds/native_ads.dart';
 import '../controller/country_controller.dart';
 import 'Repayment_scrren/view/repayment_page.dart';
 import 'all_types_of_loan_scrren/view/all_types_of_loan_page.dart';
@@ -36,11 +39,18 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
   Widget build(BuildContext context) {
     return  SafeArea(
       child: Scaffold(
-        body: Column(
+        body: Column(crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: InkWell(onTap: () {
+                InterstitialAds.showAds(callBack : (){
+                  Navigator.pop(context);
+                });
+              },child: Icon(Icons.arrow_back_ios,color: Colors.red,size: 30,)),
+            ),
             const Image(image: AssetImage("assets/images/header.webp")),
             2.ph,
-
             Expanded(
               child: SingleChildScrollView(
                 child: Padding(
@@ -70,6 +80,7 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                       },child: const Image(image: AssetImage("assets/images/home_loan_guide.webp"))),
                       // 2.ph,
                       // const Image(image: AssetImage("assets/images/home_multi_tool.webp")),
+                      (PreferencesManager.get_Status=="on")?NativeAds():const SizedBox(),
                       2.ph,
                       InkWell(onTap: () {
                         nextPageFade(const RepaymentPage());
@@ -86,6 +97,7 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                       InkWell(onTap: () {
                         nextPageFade(const InsurancePolicyPage());
                       },child: const Image(image: AssetImage("assets/images/home_insurance_policy.webp"))),
+                      (PreferencesManager.get_Status=="on")?NativeAds():const SizedBox(),
                       2.ph,
                       InkWell(onTap: () {
                         nextPageFade(const FinancePage());
@@ -101,6 +113,7 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                         nextPageFade(CheckCreditOfflinePage());
                       },child: const Image(image: AssetImage("assets/images/home_check_credit_offline.webp"))),
                       2.ph,
+                      (PreferencesManager.get_Status=="on")?NativeAds():const SizedBox(),
                       Text("Payment LoanTools",style: TextStyle(fontWeight: FontWeight.w400,color: Colors.black,fontSize: 20.sp,fontFamily: "Regular"),),
                       2.ph,
                       InkWell(onTap: () {
@@ -115,6 +128,7 @@ class _EmiLoanGuidePageState extends State<EmiLoanGuidePage> {
                         nextPageFade(const PyadaySpecificPage());
                       },child: const Image(image: AssetImage("assets/images/home_payday_countries.webp"))),
                       2.ph,
+                      (PreferencesManager.get_Status=="on")?NativeAds():const SizedBox(),
                       InkWell(onTap: () {
                         nextPageFade(const ComparisonsPage());
                       },child: const Image(image: AssetImage("assets/images/home_payday_lenders.webp"))),

@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:loan_guru/global_var.dart';
 
+import '../Ads/AdsConstants/ads_preference.dart';
+import '../Ads/BannerAds/banner_ads.dart';
+import '../Ads/NativeAds/native_ads.dart';
 import 'on_borading_page_2.dart';
 
 class OnBoardingPage1 extends StatefulWidget {
@@ -20,23 +23,33 @@ class _OnBoardingPage1State extends State<OnBoardingPage1> {
         onWillPop: () async{
           return false;
         },
-        child: Stack(
+        child: Column(
           children: [
-            const Column(
-              children: [
-                Expanded(child: SizedBox(width: double.infinity,height: double.infinity,child: Image(fit: BoxFit.cover,image: AssetImage("assets/images/bg1.webp")))),
-              ],
-            ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Padding(
-                padding: EdgeInsets.all(20.r),
-                child: SizedBox(height: 80,width:130,child: InkWell(onTap: () {
-                  nextPageFade(const OnBoradingPage2());
-                },child: const Image(image: AssetImage("assets/images/btn_next.webp")))),
+            Expanded(
+              child: Stack(
+                children: [
+                  const Column(
+                    children: [
+                      Expanded(child: SizedBox(width: double.infinity,height: double.infinity,child: Image(fit: BoxFit.cover,image: AssetImage("assets/images/bg1.webp")))),
+                    ],
+                  ),
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: EdgeInsets.all(20.r),
+                      child: SizedBox(height: 80,width:130,child: InkWell(onTap: () {
+                        nextPageFade(const OnBoradingPage2());
+                      },child: const Image(image: AssetImage("assets/images/btn_next.webp")))),
+                    ),
+                  ),
+                  
+                ],
               ),
             ),
-
+            const Align(
+              alignment: Alignment.bottomCenter,
+              child: DisplayBannerAds(),
+            ),
           ],
         ),
       ),

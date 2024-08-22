@@ -38,8 +38,8 @@ class PreferencesManager {
   static initRemotGetData() async {
     // Set the Remote Config settings
     await _remoteConfing.setConfigSettings(RemoteConfigSettings(
-      fetchTimeout: Duration(seconds: 10),
-      minimumFetchInterval: Duration(seconds: 10),
+      fetchTimeout: Duration(seconds:2),
+      minimumFetchInterval: Duration(seconds:2),
     ));
 
     // Fetch and activate the remote config

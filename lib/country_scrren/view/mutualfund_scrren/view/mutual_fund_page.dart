@@ -3,6 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:loan_guru/utils/cons.dart';
 import 'package:scroll_loop_auto_scroll/scroll_loop_auto_scroll.dart';
 
+import '../../../../Ads/AdsConstants/ads_preference.dart';
+import '../../../../Ads/BannerAds/banner_ads.dart';
+import '../../../../Ads/NativeAds/native_ads.dart';
 import '../../../../utils/color.dart';
 import '../../interest_rates_loans_scrren/controller/interest_controller.dart';
 import '../../loan_guide_scrren/controller/loan_controller.dart';
@@ -65,6 +68,10 @@ class _MutualFundPageState extends State<MutualFundPage> {
                 ],
               ),
             ),
+            const Align(
+              alignment: Alignment.bottomCenter,
+              child: DisplayBannerAds(),
+            ),
             Expanded(
               child: Padding(
                 padding:EdgeInsets.all(12.r),
@@ -106,7 +113,8 @@ class _MutualFundPageState extends State<MutualFundPage> {
                   ],
                 ),
               ),
-            )
+            ),
+            (PreferencesManager.get_Status=="on")?NativeAds():const SizedBox(),
           ],
         ),
       ),

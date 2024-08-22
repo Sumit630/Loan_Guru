@@ -65,7 +65,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     print("list Count :; ${CreditCountryController.nameOfCountryList.length}||Image ${CreditCountryController.nameOfCountryList.length}");
-    //AppOpenAdManager().appOpenAds();
+    AppOpenAdManager().appOpenAds();
     // _appLifecycleReactor =
     //     AppLifecycleReactor(appOpenAdManager: appOpenAdManager);
     // _appLifecycleReactor.listenToAppStateChanges();

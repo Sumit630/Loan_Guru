@@ -5,6 +5,8 @@ import 'package:loan_guru/country_scrren/view/emi_loan_guide_page.dart';
 import 'package:loan_guru/global_var.dart';
 import 'package:loan_guru/utils/cons.dart';
 
+import '../../Ads/BannerAds/banner_ads.dart';
+import '../../Ads/IntrestialAds/intrestial_ads.dart';
 import '../../select_credit_list_scrren/controller/credit_card_list_controller.dart';
 import '../../utils/color.dart';
 import '../../wigets/hexagon_shape.dart';
@@ -69,7 +71,9 @@ class _CountryHomePageState extends State<CountryHomePage> {
                       (selectSharsh.value==false)?Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           InkWell(onTap: () {
-                            Navigator.pop(context);
+                            InterstitialAds.showAds(callBack : (){
+                              Navigator.pop(context);
+                            });
                           },child: const Icon(Icons.arrow_back_ios,color: Colors.white,)),
                           Text(
                             "Choose Your Countrty",
@@ -198,7 +202,10 @@ class _CountryHomePageState extends State<CountryHomePage> {
                       },),
                   ),
                 ),
-
+                const Align(
+                  alignment: Alignment.bottomCenter,
+                  child: DisplayBannerAds(),
+                ),
               ],
             );
           }

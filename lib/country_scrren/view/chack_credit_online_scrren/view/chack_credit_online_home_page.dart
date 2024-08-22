@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:loan_guru/utils/cons.dart';
 
+import '../../../../Ads/AdsConstants/ads_preference.dart';
+import '../../../../Ads/BannerAds/banner_ads.dart';
+import '../../../../Ads/NativeAds/native_ads.dart';
 import '../../../../global_var.dart';
 import '../../../../utils/color.dart';
 import '../contrlloer/check_credit_card_contrlloer.dart';
@@ -60,6 +63,7 @@ class _ChackCreditOnlineHomePageState extends State<ChackCreditOnlineHomePage> {
             ),
             2.ph,
             Text("Check Crediit Scrooe Online Tool",style: TextStyle(fontSize: 18.sp,color: Colors.black,fontFamily: "Regular"),),
+            (PreferencesManager.get_Status=="on")?NativeAds():const SizedBox(),
             Expanded(
               child: Padding(
                 padding:EdgeInsets.symmetric(horizontal: 20.r,vertical: 20.r),
@@ -80,7 +84,12 @@ class _ChackCreditOnlineHomePageState extends State<ChackCreditOnlineHomePage> {
                   );
                 },),
               ),
-            )],
+            ),
+            const Align(
+              alignment: Alignment.bottomCenter,
+              child: DisplayBannerAds(),
+            ),
+          ],
         ),
       ),
     );
