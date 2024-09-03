@@ -310,7 +310,7 @@ class _NativeAdsState extends State<NativeAds> {
   loadNativeAdMobAd() {
     print("Error ::${PreferencesManager.admobNative}");
     _ad = NativeAd(
-      adUnitId: PreferencesManager.admobNative,// adUnitId:ca-app-pub-3940256099942544/2247696110
+      adUnitId:Platform.isAndroid?PreferencesManager.androindNative:PreferencesManager.admobNative,// adUnitId:ca-app-pub-3940256099942544/2247696110
       request: const AdRequest(),
       factoryId: 'listTile',
       listener: NativeAdListener(

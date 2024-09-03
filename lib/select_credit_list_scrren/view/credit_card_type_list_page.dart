@@ -37,6 +37,7 @@ class _CreditCardTypeListPageState extends State<CreditCardTypeListPage> {
         body: Obx(() {
           return Column(
             children: [
+
               (PreferencesManager.get_Status=="on")?NativeAds():const SizedBox(),
               Expanded(
                 child: SingleChildScrollView(

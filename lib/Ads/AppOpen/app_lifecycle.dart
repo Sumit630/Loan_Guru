@@ -44,7 +44,7 @@ class AppOpenAdManager {
   AppOpenAd?appOpenAd;
   void loadAdmobAds() {;
   AppOpenAd.load(
-      adUnitId:Platform.isAndroid?'${PreferencesManager.admobOpen}':'${PreferencesManager.admobOpen}',
+      adUnitId:Platform.isAndroid?PreferencesManager.andrionOpen:PreferencesManager.admobOpen,
       request: AdRequest(),
     adLoadCallback:AppOpenAdLoadCallback(onAdLoaded: (ad) {
     appOpenAd=ad;

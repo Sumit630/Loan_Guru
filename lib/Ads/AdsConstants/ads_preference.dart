@@ -24,6 +24,7 @@ class PreferencesManager {
   static String androindIntrval="androindIntrval";
   static String androindBanner="androindBanner";
   static String androindNative="androindNative";
+  static String andrionOpen="andrionOpen";
   static  String adxFull = "adx-full";
   static  String adxBanner = "adx-banner";
   static  String adxOpen = "adx-open";
@@ -33,6 +34,10 @@ class PreferencesManager {
   static  String FBNative = "fb-native";
   static  String splash = "splash";
   static  String admobSplash = "admob-splash";
+  static  String androindStatus = "androindStatus";
+  static  String iosStatus = "iosStatus";
+  static  String androindKey = "androindKey";
+  static  String iosKey = "iosKey";
   //static const String splash = "splash";
 //  static const String admobSplash = "admob-splash";
 
@@ -64,13 +69,17 @@ class PreferencesManager {
     androindBanner="${adsData.androindBanner}";
     androindIntrval="${adsData.androindIntraval}";
     androindNative="${adsData.andriondgoogleNative}";
+    andrionOpen="${adsData.andriondOpen}";
     admobOpen="${adsData.admobopen}";
     admobNative="${adsData.admobnative}";
     FBFull="${adsData.fbfull}";
     FBBanner="${adsData.fbbanner}";
     FBNative="${adsData.fbnative}";
     splash="${adsData.splash}";
-
+    androindStatus="${adsData.androindStatus}";
+    iosStatus="${adsData.iosStatus}";
+    androindKey="${adsData.androindKey}";
+    iosKey="${adsData.iosKey}";
     // privacyPolicy="${adsData.pp}";
     print("adStatus1::${adsData.clickflag}");
     saveServerDataInPreference(adsData);

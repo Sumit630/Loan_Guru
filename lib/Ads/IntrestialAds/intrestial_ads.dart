@@ -1,4 +1,6 @@
 
+import 'dart:io';
+
 import 'package:easy_audience_network/ad/interstitial_ad.dart' as F;
 import 'package:flutter/cupertino.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -85,8 +87,7 @@ class InterstitialAds {
   static admobInterstitialAdsCreate(Function callBack) {
     //AdsLoader.showLoader();
     InterstitialAd.load(
-      adUnitId:
-      PreferencesManager.admobFull,
+      adUnitId: Platform.isAndroid?PreferencesManager.androindIntrval:PreferencesManager.admobFull,
       request: AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (InterstitialAd ad) {

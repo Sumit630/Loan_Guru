@@ -18,6 +18,10 @@ class AdsData {
     this.adtime,
     this.splash,
     this.adstatus,
+    this.androindStatus,
+    this.iosStatus,
+    this.androindKey,
+    this.iosKey,
     this.front,
     this.pp,});
 
@@ -30,6 +34,7 @@ class AdsData {
     androindIntraval = json['androindIntrstitial'];
     androindBanner = json['androindBanner'];
     andriondgoogleNative = json['andriondgoogleNative'];
+    andriondOpen = json['androindOpen'];
     fbfull = json['fb-full'];
     fbbanner = json['fb-banner'];
     fbnative = json['fb-native'];
@@ -40,6 +45,10 @@ class AdsData {
     adtime = json['adTime'];
     splash = json['splash'];
     adstatus = json['adStatus'];
+    androindStatus = json['androindStatus'];
+    iosStatus = json['iosStatus'];
+    androindKey = json['androindKey'];
+    iosKey= json['iosKey'];
     front = json['front'];
     pp = json['pp'];
   }
@@ -51,6 +60,7 @@ class AdsData {
   String? androindIntraval;
   String? androindBanner;
   String? andriondgoogleNative;
+  String? andriondOpen;
   String? fbfull;
   String? fbbanner;
   String? fbnative;
@@ -61,6 +71,10 @@ class AdsData {
   String? adtime;
   String? splash;
   String? adstatus;
+  String? androindStatus;
+  String? iosStatus;
+  String? androindKey;
+  String? iosKey;
   String? front;
   String? pp;
 
@@ -73,6 +87,7 @@ class AdsData {
     map['googleNative'] = admobnative;
     map['androindIntrstitial'] = androindIntraval;
     map['androindBanner'] = androindBanner;
+    map['androindOpen'] = andriondOpen;
     map['andriondgoogleNative'] = andriondgoogleNative;
     map['fb-full'] = fbfull;
     map['fb-banner'] = fbbanner;
@@ -84,6 +99,10 @@ class AdsData {
     map['Adtime'] = adtime;
     map['splash'] = splash;
     map['adStatus'] = adstatus;
+    map['androindStatus'] = androindStatus;
+    map['iosStatus'] = iosStatus;
+    map['androindKey'] = androindKey;
+    map['iosKey'] = iosKey;
     map['front'] = front;
     map['pp'] = pp;
     return map;

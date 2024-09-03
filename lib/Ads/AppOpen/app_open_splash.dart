@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-
+import 'dart:io' show Platform;
 import '../AdsConstants/ads_preference.dart';
 
 class AppOpenSplash{
@@ -16,7 +16,7 @@ class AppOpenSplash{
 
   static loadAdmobAds(Function callBack) {
     AppOpenAd.load(
-      adUnitId: PreferencesManager.admobSplashOpen,
+      adUnitId:Platform.isAndroid?PreferencesManager.admobSplashOpen:PreferencesManager.admobOpen,
       request: const AdRequest(),
       adLoadCallback: AppOpenAdLoadCallback(
         onAdLoaded: (ad) {

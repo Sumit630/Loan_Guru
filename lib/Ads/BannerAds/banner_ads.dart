@@ -66,7 +66,7 @@ class _DisplayBannerAdsState extends State<DisplayBannerAds> {
 
   loadBannerAdAdMob() {
     bannerAd = BannerAd(
-      adUnitId:PreferencesManager.admobBanner,
+      adUnitId:Platform.isAndroid?PreferencesManager.androindBanner:PreferencesManager.admobBanner,
       request: AdRequest(),
       size: AdSize.banner,
       listener: BannerAdListener(
