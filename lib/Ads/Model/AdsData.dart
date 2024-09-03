@@ -77,7 +77,6 @@ class AdsData {
   String? iosKey;
   String? front;
   String? pp;
-
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['splashFull'] = admobfull;
