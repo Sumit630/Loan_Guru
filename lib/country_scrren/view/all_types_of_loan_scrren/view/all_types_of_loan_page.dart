@@ -1,4 +1,4 @@
-import 'package:easy_audience_network/ad/banner_ad.dart';
+// import 'package:easy_audience_network/ad/banner_ad.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:loan_guru/country_scrren/view/all_types_of_loan_scrren/view/all_types_of_loan_list_page.dart';

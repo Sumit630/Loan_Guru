@@ -1,7 +1,7 @@
 
 import 'dart:io';
 
-import 'package:easy_audience_network/ad/interstitial_ad.dart' as F;
+// import 'package:easy_audience_network/ad/interstitial_ad.dart' as F;
 import 'package:flutter/cupertino.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
@@ -175,41 +175,41 @@ class InterstitialAds {
 // AdsLoader.showLoader();
     callBack();
 // final interstitialAd = F.InterstitialAd(F.InterstitialAd.testPlacementId);
-    final interstitialAd = F.InterstitialAd(PreferencesManager.FBFull);
+//     final interstitialAd = F.InterstitialAd(PreferencesManager.FBFull);
+//
+//     interstitialAd.listener = F.InterstitialAdListener(
+//       onLoaded: () {
+//         interstitialAd.show();
+//       },
+//       onDismissed: () {
+//         interstitialAd.destroy();
+//         print('Interstitial dismissed');
+// // Additional logic when the ad is dismissed
+//         Constant.Front_Counter = 1;
+//         AdsLoader.hideLoader();
+//         Constant.IS_TIME_INTERVAL = false;
+//         Future.delayed(
+//           Duration(
+//             milliseconds: int.parse((PreferencesManager.getPref(
+//                 PreferencesManager.get_AD_Time) as String)) * 10,
+//           ), () {
+//           debugPrint(
+//               'Time ----------- ${int.parse(PreferencesManager.get_AD_Time) * 10}');
+//           Constant.IS_TIME_INTERVAL = true;
+//         },
+//         );
+//
+//         callBack();
+//       },
+//       onError: (code, message) {
+//         print('Interstitial error: $message');
+//         AdsLoader.hideLoader();
+//         callBack();
+//       },
+//
+//     );
 
-    interstitialAd.listener = F.InterstitialAdListener(
-      onLoaded: () {
-        interstitialAd.show();
-      },
-      onDismissed: () {
-        interstitialAd.destroy();
-        print('Interstitial dismissed');
-// Additional logic when the ad is dismissed
-        Constant.Front_Counter = 1;
-        AdsLoader.hideLoader();
-        Constant.IS_TIME_INTERVAL = false;
-        Future.delayed(
-          Duration(
-            milliseconds: int.parse((PreferencesManager.getPref(
-                PreferencesManager.get_AD_Time) as String)) * 10,
-          ), () {
-          debugPrint(
-              'Time ----------- ${int.parse(PreferencesManager.get_AD_Time) * 10}');
-          Constant.IS_TIME_INTERVAL = true;
-        },
-        );
-
-        callBack();
-      },
-      onError: (code, message) {
-        print('Interstitial error: $message');
-        AdsLoader.hideLoader();
-        callBack();
-      },
-
-    );
-
-    interstitialAd.load();
+    // interstitialAd.load();
 
 // FacebookInterstitialAd.loadInterstitialAd(
 //   placementId: PreferencesManager.FBFull,

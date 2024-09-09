@@ -1,7 +1,7 @@
 // import 'package:facebook_audience_network/ad/ad_banner.dart';
 import 'dart:io';
 
-import 'package:easy_audience_network/ad/banner_ad.dart' as F;
+// import 'package:easy_audience_network/ad/banner_ad.dart' as F;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -95,47 +95,48 @@ class _DisplayBannerAdsState extends State<DisplayBannerAds> {
         print("_adsController.showFacebook.value ${showFacebook}");
 
         if(showFacebook){
-          return Stack(
-            children: [
-              shimmerView(),
-              Container(
-                alignment: Alignment(0.5, 1),
-                child: F.BannerAd(
-                  placementId: Platform.isAndroid
-                      ?  PreferencesManager.FBBanner
-                      :  PreferencesManager.FBBanner,
-                  bannerSize: F.BannerSize.STANDARD,
-                  listener: F.BannerAdListener(
-                    onError: (code, message) => print('error'),
-                    onLoaded: () => print('loaded'),
-                    onClicked: () => print('clicked'),
-                    onLoggingImpression: () => print('logging impression'),
-                  ),
-                ),
-              )
-              // FacebookBannerAd(
-              //   placementId:PreferencesManager.FBBanner,
-              //   bannerSize: BannerSize.STANDARD,
-              //   listener: (result, value) {
-              //     switch (result) {
-              //       case BannerAdResult.ERROR:
-              //         print("Error: $value");
-              //         break;
-              //       case BannerAdResult.LOADED:
-              //         print("Loaded: $value");
-              //         break;
-              //       case BannerAdResult.CLICKED:
-              //         print("Clicked: $value");
-              //         break;
-              //       case BannerAdResult.LOGGING_IMPRESSION:
-              //         print("Logging Impression: $value");
-              //         break;
-              //     }
-              //   },
-              // ),
-
-            ],
-          );
+          return SizedBox();
+          // return Stack(
+          //   children: [
+          //     shimmerView(),
+          //     Container(
+          //       alignment: Alignment(0.5, 1),
+          //       child: F.BannerAd(
+          //         placementId: Platform.isAndroid
+          //             ?  PreferencesManager.FBBanner
+          //             :  PreferencesManager.FBBanner,
+          //         bannerSize: F.BannerSize.STANDARD,
+          //         listener: F.BannerAdListener(
+          //           onError: (code, message) => print('error'),
+          //           onLoaded: () => print('loaded'),
+          //           onClicked: () => print('clicked'),
+          //           onLoggingImpression: () => print('logging impression'),
+          //         ),
+          //       ),
+          //     )
+          //     // FacebookBannerAd(
+          //     //   placementId:PreferencesManager.FBBanner,
+          //     //   bannerSize: BannerSize.STANDARD,
+          //     //   listener: (result, value) {
+          //     //     switch (result) {
+          //     //       case BannerAdResult.ERROR:
+          //     //         print("Error: $value");
+          //     //         break;
+          //     //       case BannerAdResult.LOADED:
+          //     //         print("Loaded: $value");
+          //     //         break;
+          //     //       case BannerAdResult.CLICKED:
+          //     //         print("Clicked: $value");
+          //     //         break;
+          //     //       case BannerAdResult.LOGGING_IMPRESSION:
+          //     //         print("Logging Impression: $value");
+          //     //         break;
+          //     //     }
+          //     //   },
+          //     // ),
+          //
+          //   ],
+          // );
         }else if(isBannerAdReady){
           return Container(
             width: bannerAd!.size.width.toDouble(),
