@@ -2,24 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app requires access to the microphone to record audio for the purpose of enhancing user interaction</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-9448216581956347~8913327638</string>
+	<key>GADIsAdManagerApp</key>
+	<string>true</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Loan Guru</string>
+	<string>LoanGuru</string>
 	<key>CFBundleExecutable</key>
-	<string>com.app.loanguru</string>
+	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>loan_guru</string>
+	<string>candle_stick_pattern_app</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>

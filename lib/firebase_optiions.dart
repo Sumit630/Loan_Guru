@@ -38,12 +38,10 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: '',
-    appId: '',
-    messagingSenderId: '',
-    projectId: '',
-    storageBucket: '',
-    iosBundleId: '',
+    apiKey: 'AIzaSyCWXWBaUFJhlLy4jIAxR9S_mI5y_QbmY4I',
+    appId: '1:218758514469:ios:bcf4adf838d14f963b3ccc',
+    messagingSenderId: '218758514469',
+    projectId: 'loan-guru-6a6e1',
   );
 
 }
